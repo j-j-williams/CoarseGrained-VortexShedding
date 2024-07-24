@@ -1,7 +1,9 @@
 # CoarseGrained-VortexShedding
 
-### To-Do
-1. Update the `stem` string variables and related variables, in `Processing` codes and `Main` codes, in order to reflect the new directories of the data.
-2. Upload some IBPM simulation files (maybe just Re=50 and only ibpm20000.bin).
-3. Upload code for iterating across PDE-FIND sparsity.
+This repository features code and datasets for analyzing a coarse-grained cylinder vortex shedding dataset. This work is discussed in Williams et al. (_in progress_) and features the code used to perform coarse-grained analyses. The work makes extensive use of the SINDy method introduced in Brunton et al. (2016a) and PDE-FIND introduced in Rudy et al. (2017).
 
+
+
+# Vortex Shedding
+
+Vortex shedding is an important and striking physical phenomenon observed in fluids charaterized by alternating, periodic vortices behind a body in a freestream with sufficient Reynolds number Re.  
