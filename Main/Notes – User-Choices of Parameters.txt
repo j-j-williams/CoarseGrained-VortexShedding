@@ -1,0 +1,43 @@
+###  User-Choices of Parameters
+
+
+###  Choose  Reynolds number  Re
+Re = 50
+# Re = 62
+# Re = 75
+# Re = 87
+# Re = 100
+
+
+###  Choose which  coarse-grained data
+# data_choice_string = 'U'
+# data_choice_string = 'V'
+data_choice_string = 'W'
+
+
+###  Choose which  bounds of integration
+y_CG_1 = -8 ; y_CG_2 = 8
+# y_CG_1 = -1 ; y_CG_2 = 1
+
+
+###  Choose time-delay embedding
+TD_Embed = 2
+# TD_Embed = 4
+# TD_Embed = 6
+
+
+###  Choose  x-domain
+## x = [2, 9]      Sam Rudy subdomain
+x_trnc_pt_a = 199 ; x_trnc_pt_b = 549
+
+## x = [2, 49.5]   Full domain
+# x_trnc_pt_a = 199 ; x_trnc_pt_b = 2574
+
+## x = [38 , 45]      
+# x_trnc_pt_a = 1999 ; x_trnc_pt_b = 2349
+
+
+## TEST LNE HERE
+
+
+####ONE MORE###!!!
