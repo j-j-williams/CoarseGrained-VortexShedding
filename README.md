@@ -1,6 +1,6 @@
 # CoarseGrained-VortexShedding
 
-This repository features code and datasets for analyzing a coarse-grained cylinder vortex shedding dataset. This work is discussed in Williams et al. (_in progress_) and features the code used to perform coarse-grained analyses. The work makes extensive use of the Sparse Identification of Nonlinear Dynamical systems (SINDy) method (Brunton et al. (2016a)) and PDE-FIND (Rudy et al. (2017)); see the PySINDy repospitory here: [link]([url](https://github.com/dynamicslab/pysindy))
+This repository features code and datasets for analyzing a coarse-grained cylinder vortex shedding dataset. This work is discussed in Williams et al. (_in progress_) and features the code used to perform coarse-grained analyses. The work makes extensive use of the Sparse Identification of Nonlinear Dynamical systems (SINDy) method (Brunton et al. (2016a)) and PDE-FIND (Rudy et al. (2017)); see the PySINDy repospitory here [at this repository](https://github.com/dynamicslab/pysindy).
 
 
 
