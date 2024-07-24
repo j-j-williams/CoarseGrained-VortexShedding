@@ -14,7 +14,7 @@ Vortex shedding is an important and striking physical phenomenon observed in flu
 
 Flowfield data consists of pressure, velocity, and vorticity flowfields in time and two spatial dimensions. We spatially coarse-grain the data, removing the vertical $y$-coordinate from the dataset by integrating across it:
 
-$ \overline{\omega}(x,t) = \int_{-H}^{+H} \omega(y; x,t) dy $
+$$ \overline{\omega}(x,t) = \int_{-H}^{+H} \omega(y; x,t) dy $$
 
 By so doing, we reduce the dimension of our data to one-dimensional spatiotemporal.
 
