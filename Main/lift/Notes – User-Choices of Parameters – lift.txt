@@ -1,0 +1,105 @@
+#%% Set filename and pathname
+
+
+# Re = 50
+
+# t_trm_1 = 0
+# t_trm_2 = -1
+
+# t_trm_1 = 25000
+# t_trm_2 = 50000
+
+
+# t_trm_1 = 24850
+# t_trm_2 = 49850
+
+
+# t_trm_1 = 25000
+# t_trm_2 = 45000
+
+# t_trm_1 = 30000
+# t_trm_2 = 47500
+
+
+
+# Re = 62
+
+# # t_trm_1 = 0
+# # t_trm_2 = -1
+
+# t_trm_1 = 0
+# t_trm_2 = 20000
+
+
+
+# Re = 75
+
+# # t_trm_1 = 0
+# # t_trm_2 = -1
+
+# t_trm_1 = 0
+# t_trm_2 = 15000
+
+
+
+
+# Re = 87
+
+# # t_trm_1 = 0
+# # t_trm_2 = -1
+
+# # t_trm_1 = 0
+# # t_trm_2 = 10000
+
+# t_trm_1 = 2500
+# t_trm_2 = 15000
+
+
+
+
+Re = 100
+t_trm_1 = 5000
+t_trm_2 = 12500
+
+
+
+
+
+###  Time-Delay Embedding Parameters
+
+## For Re = 50
+# TD_Embed = 0  #  0 TDE
+# TD_Embed = 2.00  #  ~1/4 period
+# TD_Embed = 2.62  #  >>1/4 period; minimum NMSE
+# TD_Embed = 3.98  #  ~1/2 period
+# TD_Embed = 6  #  ~3/4 period
+
+TD_Embed = 0.0  #  extreme local minima
+
+
+
+## For Re = 100 with T = 6.02
+# TD_Embed = 1.5  #  ~1/4 period
+
+
+
+###  SINDy Parameters
+
+threshold              = 0.0
+
+differentiation_method = ps.FiniteDifference(order=2)
+feature_library        = ps.PolynomialLibrary(degree=3)
+optimizer              = ps.STLSQ(threshold=threshold)
+
+
+###  Other parameters
+
+should_normalize = True
+
+
+
+
+
+
+
+

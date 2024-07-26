@@ -1,0 +1,13 @@
+{
+    "Re":                   50       ,
+    "t_trm_1":              25000    ,
+    "t_trm_2":              50000    ,
+    
+    "TDE_or_ddt":           "ddt"        ,
+    "TD_Embed":             2        ,
+
+    "threshold":            0        ,
+    "diff_order":           2        ,
+    "poly_order":           3        , 
+    "should_normalize":     1        
+}
