@@ -27,7 +27,7 @@ We search for a reduced-order model (ROM) for our cylinder vortex shedding by fi
 
 Test Gif:
 
-![giphy](https://github.com/user-attachments/assets/07798fcd-a797-4f46-94db-307ce020a856 "Gif of kitty" =25%x) ![shutterstock_1260580581](https://github.com/user-attachments/assets/fa97a952-4085-466c-a432-b64ffc2c496c "Picture of puppy" = 25%x)
+![giphy](https://github.com/user-attachments/assets/07798fcd-a797-4f46-94db-307ce020a856 "Gif of kitty" =50%x) ![shutterstock_1260580581](https://github.com/user-attachments/assets/fa97a952-4085-466c-a432-b64ffc2c496c "Picture of puppy" = 50%x)
 
 
 ![images](https://github.com/user-attachments/assets/8a860b31-e4e0-4cda-9709-21989f4671cc) ![images](https://github.com/user-attachments/assets/8a860b31-e4e0-4cda-9709-21989f4671cc) ![images](https://github.com/user-attachments/assets/8a860b31-e4e0-4cda-9709-21989f4671cc "Picture of puppy")
