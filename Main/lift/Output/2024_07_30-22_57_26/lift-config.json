@@ -8,12 +8,12 @@
     "TDE_or_ddt":           "TDE"   ,
     "TD_Embed":             2       ,
 
-    "threshold":            0       ,
+    "threshold":            0.25    ,
     "poly_order":           3       ,
 
     "diff_order":           2       , 
     "should_normalize":     1       ,
 
-    "iterations":           31      
+    "iterations":           26      
 
 }

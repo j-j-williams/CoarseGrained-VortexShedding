@@ -9,9 +9,15 @@ warnings.filterwarnings("ignore", category=UserWarning)
 from LoadData_lift import fnc_LoadData_lift
 from raiseDim_lift import fnc_raiseDim_lift
 from runSINDy import fnc_runSINDy
+from saveDirectory import fnc_saveDirectory
+from saveData import fnc_saveData
 
 
 def fnc_runSINDy_Iter_TDE():
+	
+
+	###  Create the unique output directory
+	save_dir = fnc_saveDirectory()
 	
 
 	###  Load the the configuration file with all analysis settings and parameters
@@ -25,7 +31,7 @@ def fnc_runSINDy_Iter_TDE():
 	t , C_l , C_d , dt = fnc_LoadData_lift( Re , t_trm_1 , t_trm_2 )
 
 
-	TDE_num = 21
+	TDE_num = iterations
 	TDE_vec = np.linspace( 0 , TD_Embed , num=TDE_num )
 	print('\n\nIterating from tau = ' + str(0) + ' to tau = ' + str(TD_Embed) + '\n')
 
@@ -68,10 +74,11 @@ def fnc_runSINDy_Iter_TDE():
 	NRMSE_sys_TDE = np.sqrt( NRMSE_1_TDE**2 + NRMSE_2_TDE**2 )
 
 
-	return TDE_vec , Coefs_u1_TDE , Coefs_u2_TDE , NRMSE_1_TDE , NRMSE_2_TDE , NRMSE_sys_TDE
+	###  Save the data
+	save_arrays = [ TDE_vec , Coefs_u1_TDE , Coefs_u2_TDE , NRMSE_1_TDE , NRMSE_2_TDE , NRMSE_sys_TDE ]
+	save_names = [ 'TDE_vec.npy' , 'Coefs_u1.npy' , 'Coefs_u2.npy' , 'NRMSE_1.npy' , 'NRMSE_2.npy' , 'NRMSE_sys.npy' ]
+	fnc_saveData(save_dir , save_arrays , save_names)
 
 
-
-
-
+	return save_dir , model , TDE_vec , Coefs_u1_TDE , Coefs_u2_TDE , NRMSE_1_TDE , NRMSE_2_TDE , NRMSE_sys_TDE
 

@@ -68,38 +68,11 @@ t_trm_2 = 12500
 ###  Time-Delay Embedding Parameters
 
 ## For Re = 50
-# TD_Embed = 0  #  0 TDE
-# TD_Embed = 2.00  #  ~1/4 period
-# TD_Embed = 2.62  #  >>1/4 period; minimum NMSE
-# TD_Embed = 3.98  #  ~1/2 period
-# TD_Embed = 6  #  ~3/4 period
-
-TD_Embed = 0.0  #  extreme local minima
-
+TD_Embed = 2.00  #  ~1/4 period
 
 
 ## For Re = 100 with T = 6.02
 # TD_Embed = 1.5  #  ~1/4 period
-
-
-
-###  SINDy Parameters
-
-threshold              = 0.0
-
-differentiation_method = ps.FiniteDifference(order=2)
-feature_library        = ps.PolynomialLibrary(degree=3)
-optimizer              = ps.STLSQ(threshold=threshold)
-
-
-###  Other parameters
-
-should_normalize = True
-
-
-
-
-
 
 
 

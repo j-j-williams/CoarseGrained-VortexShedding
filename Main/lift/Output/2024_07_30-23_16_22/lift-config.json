@@ -6,7 +6,7 @@
     "t_trm_2":              50000   ,
     
     "TDE_or_ddt":           "TDE"   ,
-    "TD_Embed":             2       ,
+    "TD_Embed":             3       ,
 
     "threshold":            0       ,
     "poly_order":           3       ,
