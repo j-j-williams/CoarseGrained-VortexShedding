@@ -1,18 +1,38 @@
 
-from runSINDy import fnc_runSINDy
 import numpy as np
 import pysindy as ps
+import json
 
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
+from LoadData_lift import fnc_LoadData_lift
+from raiseDim_lift import fnc_raiseDim_lift
+from runSINDy import fnc_runSINDy
 
-def fnc_runSINDy_Iter_Sparsity( data_1 , data_2 , t_PS , dt , diff_order , poly_order , threshold ):
+
+def fnc_runSINDy_Iter_Sparsity():
 	
-	n_terms = 10
+
+	###  Load the the configuration file with all analysis settings and parameters
+	with open('Lift-config.json', 'r') as f:
+	    config = json.load(f)
+	globals().update(config)
+	n_terms = np.math.comb(poly_order + 2, 2)
 
 
-	threshold_num = 21
+	###  Load data
+	t , C_l , C_d , dt = fnc_LoadData_lift( Re , t_trm_1 , t_trm_2 )
+
+
+	###  Raise dimension of system by either time-delay embedding or time-differentiating
+
+	from raiseDim_lift import fnc_raiseDim_lift
+	t_PS , data_1 , data_2 = \
+	fnc_raiseDim_lift( TDE_or_ddt , t , TD_Embed, C_l , C_d , l_d_flag , should_normalize)
+
+
+	threshold_num = 51
 	threshold_vec = np.linspace( 0 , threshold , num=threshold_num )
 	print('Iterating from lambda = ' + str(0) + ' to lambda = ' + str(threshold))
 

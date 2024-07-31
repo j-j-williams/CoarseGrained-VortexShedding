@@ -27,23 +27,9 @@ def fnc_runSINDy( data_1 , data_2 , t_PS , dt, diff_order , poly_order , thresho
 
 	model.fit(X, t=t_PS, quiet=True)
 
-	# print('')
-	# print('x = zeta')
-	# print('y = eta')
-	# print('\n')
-	# model.print(precision=4)
-	# print('\n')
-	# model.print(precision=10)
-	# print('\n')
-
-
-
 
 	coefs = model.coefficients()
     
-    # Coefs_u1[TD_Embed_iter , :] = coefs[0,:]
-    # Coefs_u2[TD_Embed_iter , :] = coefs[1,:]
-
 
 	X0 = X[0,:]
 	x_test_sim = model.simulate(X0, t_PS)
@@ -54,10 +40,6 @@ def fnc_runSINDy( data_1 , data_2 , t_PS , dt, diff_order , poly_order , thresho
 	NRMSE_2 = np.sqrt( np.sum(error_2**2) / np.sum(data_2**2) )
 
 	NRMSE_sys = np.sqrt( NRMSE_1**2 + NRMSE_2**2 )
-
-
-
-
 
 
 	return model , coefs , x_test_sim , error_1 , error_2 , NRMSE_1 , NRMSE_2 , NRMSE_sys
