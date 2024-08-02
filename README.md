@@ -22,7 +22,7 @@ By so doing, we reduce the dimension of our data to one-dimensional spatiotempor
 
 # Model Selection
 
-We seek for a reduced-order model (ROM) for cylinder vortex shedding. We generate ROMs by using the SINDy method (Brunton et al. (2016a), Rudy et al. (2017)) to find systems of ordinary and partial differential equations to explain the reduced-order dynamics, including the dynamics of the coefficients of lift and drag and the coarse-grained flowfields of velocity and vorticity.
+We seek for a reduced-order model (ROM) for cylinder vortex shedding. We generate ROMs by using the SINDy method (Brunton et al. (2016a), Rudy et al. (2017)) to find systems of ordinary and partial differential equations to explain the reduced-order dynamics, including the dynamics of the coefficients of lift and drag and the coarse-grained velocity and vorticity flowfields.
 
 
 Test image:
