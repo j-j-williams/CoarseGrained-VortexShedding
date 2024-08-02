@@ -1,15 +1,22 @@
 {
-    "Re":                   50       ,
+
+    "Re":                   87       ,
     "data_choice_string":   "W"      ,
+
+    "x_trnc_pt_a":          199      ,
+    "x_trnc_pt_b":          2574     ,
+
     "y_CG_1":               -8       ,
     "y_CG_2":               8        ,
-    "TD_Embed":             2        ,
-    "x_trnc_pt_a":          199      ,
-    "x_trnc_pt_b":          2574      ,
+
+    "TDE_or_ddt":           "TDE"    ,
+    "TD_Embed":             2.2      ,
+
+    "should_normalize":     1        ,
+
     "threshold":            0        ,
     "should_interact":      0        ,
     "should_uniform":       1        ,
-    "should_normalize":     1        ,
     "is_periodic":          0        ,
     "deriv_order":          2        ,
     "PolyPower":            23       ,

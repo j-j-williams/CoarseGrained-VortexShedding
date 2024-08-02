@@ -6,7 +6,7 @@ import json
 import warnings
 warnings.filterwarnings("ignore")
 
-from LoadData_lift import fnc_LoadData_lift
+from loadData_lift import fnc_loadData_lift
 from raiseDim_lift import fnc_raiseDim_lift
 from runSINDy import fnc_runSINDy
 from saveDirectory import fnc_saveDirectory
@@ -28,7 +28,7 @@ def fnc_runSINDy_Iter_Sparsity():
 
 
 	###  Load data
-	t , C_l , C_d , dt = fnc_LoadData_lift( Re , t_trm_1 , t_trm_2 )
+	t , C_l , C_d , dt = fnc_loadData_lift( Re , t_trm_1 , t_trm_2 )
 
 
 	###  Raise dimension of system by either time-delay embedding or time-differentiating

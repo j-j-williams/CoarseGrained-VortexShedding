@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def fnc_LoadData_lift(Re , t_trm_1 , t_trm_2):
+def fnc_loadData_lift(Re , t_trm_1 , t_trm_2):
 
 	###  Set loading strings
 

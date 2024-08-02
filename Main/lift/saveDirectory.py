@@ -11,7 +11,7 @@ def fnc_saveDirectory():
 	os.makedirs(save_dir + 'Data/')
 	os.makedirs(save_dir + 'Plots/')
 	
-	config_filename = 'lift-config.json'
+	config_filename = 'config-lift.json'
 	if os.path.exists(config_filename):  shutil.copy(config_filename, save_dir)
 
 	return save_dir
