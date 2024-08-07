@@ -13,16 +13,15 @@ plot_U = 1
 plot_V = 1
 plot_W = 1
 
-str_runTitle = 'Re050-1'
+str_runTitle = 'Re100-prd'
 
-plt_stop = 250
-
-
+plt_start = 0
+plt_stop  = 501
 
 
 ###  Set  loading string
 
-stem = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/' +str_runTitle+ '/Data/'
+stem = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Production Runs/' +str_runTitle+ '/Data/'
 
 
 directory = stem + 'U/'
@@ -31,7 +30,7 @@ N_plt = len([name for name in os.listdir(directory) if os.path.isfile(os.path.jo
 
 ###  Plot full colormaps of the data
 
-for i_plt in range( plt_stop  ):
+for i_plt in range( plt_start , plt_stop  ):
     
 	if np.mod( i_plt , N_plt//10 ) == 0: print('i  =  ' +str(i_plt) + '  /  ' +str(N_plt-1) )
 

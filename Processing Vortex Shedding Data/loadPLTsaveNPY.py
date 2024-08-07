@@ -47,7 +47,7 @@ import matplotlib.pyplot as plt
 # data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re050-2/'
 # data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re062-1/'
 
-data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re087-1/'
+data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Production Runs/Re050-prd/'
 
 
 
@@ -78,8 +78,11 @@ W = np.zeros(( nx-1 , ny-1 ))
 start = time.time()
 
 
-partial_fudge_factor = 660
+# partial_fudge_factor = 660
+partial_fudge_factor = 0
 
+print('Beginning data conversion!')
+print('Automatic removal of .PLT files set to  OFF -- right ??')
 
 for it in range( nt ):
     print('i  =  ' + str(it+partial_fudge_factor) + '  /  ' + str(nt-1+partial_fudge_factor))
