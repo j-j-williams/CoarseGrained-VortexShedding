@@ -21,26 +21,26 @@ def fnc_runSINDy_Iter_Sparsity():
 
 
 	###  Load the the configuration file with all analysis settings and parameters
-	with open('Lift-config.json', 'r') as f:
+	with open('config-lift.json', 'r') as f:
 	    config = json.load(f)
 	globals().update(config)
 	n_terms = np.math.comb(poly_order + 2, 2)
 
 
 	###  Load data
-	t , C_l , C_d , dt = fnc_loadData_lift( Re , t_trm_1 , t_trm_2 )
+	t , C_l , C_d , dt = fnc_loadData_lift( Re , t_trm_1 , t_trm_2 , regime )
 
 
 	###  Raise dimension of system by either time-delay embedding or time-differentiating
 	from raiseDim_lift import fnc_raiseDim_lift
 	t_PS , data_1 , data_2 = \
-	fnc_raiseDim_lift( TDE_or_ddt , t , TD_Embed, C_l , C_d , l_d_flag , should_normalize)
+	fnc_raiseDim_lift( TDE_or_ddt , t , TD_Embed, C_l , C_d , l_d_flag , should_normalize )
 
 
 	###  Prepare to iterative on sparsity
 	threshold_num = iterations
 	threshold_vec = np.linspace( 0 , threshold , num=threshold_num )
-	print('Iterating from lambda = ' + str(0) + ' to lambda = ' + str(threshold))
+	print('\n\nIterating from lambda = ' + str(0) + ' to lambda = ' + str(threshold) + '\n')
 
 	NRMSE_1_thresh = np.zeros(( threshold_num , ))
 	NRMSE_2_thresh = np.zeros(( threshold_num , ))

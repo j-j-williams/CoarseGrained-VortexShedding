@@ -21,18 +21,19 @@ def fnc_runSINDy_Iter_TDE():
 	
 
 	###  Load the the configuration file with all analysis settings and parameters
-	with open('Lift-config.json', 'r') as f:
+	with open('config-lift.json', 'r') as f:
 	    config = json.load(f)
 	globals().update(config)
 	n_terms = np.math.comb(poly_order + 2, 2)
 
 
 	###  Load data
-	t , C_l , C_d , dt = fnc_loadData_lift( Re , t_trm_1 , t_trm_2 )
+	t , C_l , C_d , dt = fnc_loadData_lift( Re , t_trm_1 , t_trm_2 , regime )
 
 
 	TDE_num = iterations
 	TDE_vec = np.linspace( 0 , TD_Embed , num=TDE_num )
+	if TDE_vec[0] == 0: TDE_vec[0] = dt  # When TDE = 0, the two signals are identical, and SINDy doesn't always behave well
 	print('\n\nIterating from tau = ' + str(0) + ' to tau = ' + str(TD_Embed) + '\n')
 
 
@@ -49,7 +50,7 @@ def fnc_runSINDy_Iter_TDE():
 		TDE_sub = TDE_vec[i_TDE]
 
 		###  Raise dimension of system by either time-delay embedding or time-differentiating
-		t_PS , data_1 , data_2 = fnc_raiseDim_lift( TDE_or_ddt , t , TDE_sub, C_l , C_d , l_d_flag , should_normalize)
+		t_PS , data_1 , data_2 = fnc_raiseDim_lift( TDE_or_ddt , t , TDE_sub, C_l , C_d , l_d_flag , should_normalize )
 
 
 
