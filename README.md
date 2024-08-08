@@ -10,9 +10,14 @@ Vortex shedding is an important and striking physical phenomenon observed in flu
 
 
 
-Below is the cylinder flow's vorticity flowfield at $ Re=100 $, from a zero initial condition through its transient phase until steady state.
+Below is the cylinder flow's vorticity flowfield at $$ Re=100 $$, from a zero initial condition through its transient phase until steady state.
 
 ![Vortex shedding at Re=100, transient to saturation](assets/W.gif)
+
+
+
+<img src="images/assets/W.gif" alt="Vortex shedding at Re=100, transient to saturation" width="200"/>
+
 
 
 
