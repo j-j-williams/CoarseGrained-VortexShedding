@@ -47,7 +47,7 @@ import matplotlib.pyplot as plt
 # data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re050-2/'
 # data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re062-1/'
 
-data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Production Runs/Re050-prd/'
+data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Production Runs/' + str_runTitle + '/'
 
 
 
