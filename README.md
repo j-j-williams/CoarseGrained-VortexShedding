@@ -4,6 +4,15 @@ This repository features code and datasets for analyzing a coarse-grained cylind
 
 
 
+### GitHub Repository
+
+This GitHub repo features the following:
+1. `Vortex Shedding Data`: Simulation files for cylinder flow at a range of Reynolds numbers Re, both transient and steady-state
+2. `Processing Vortex Shedding Data`: Python scripts and notebooks for post-processing and visualizing this data
+3. `Main`: Python scripts and notebooks for finding reduced-order models for cylinder vortex shedding
+
+
+
 ### Vortex Shedding
 
 Vortex shedding is an important and striking physical phenomenon observed in fluids charaterized by alternating, periodic vortices behind a body in a freestream with sufficient Reynolds number Re. Below is the cylinder flow's vorticity flowfield at Re=100, from a zero initial condition through its transient phase until steady state.
