@@ -1,0 +1,2048 @@
+Immersed Boundary Projection Method (IBPM), version 1.0
+
+Command:
+../../../build/ibpm -tecplot 1 -tecplotallgrids 0 -restart 100 -nx 2700 -ny 800 -ngrid 2 -length 54 -xoffset -2 -yoffset -8 -xshift 0.75 -geom cylinder.geom -ubf 0 -Re 62 -ic ibpm00000.bin -dt 0.02 -nsteps 500
+
+Run name: ibpm
+
+Grid parameters:
+    nx      2700
+    ny      800
+    ngrid   2
+    length  54
+    xoffset -2
+    yoffset -8
+    xshift  0.75
+    yshift  0
+
+Reading geometry from file cylinder.geom
+    160 points on the boundary
+
+Reynolds number = 62
+
+Setting up Immersed Boundary Solver...Using Cholesky solver for projection step
+Using Cholesky solver for projection step
+Using Cholesky solver for projection step
+Loading initial condition from file: ibpm00000.bin
+Reading restart file ibpm00000.bin...done
+using 3rd-order Runge Kutta (3-step) timestepper
+    dt = 0.02
+
+Loading Cholesky factorization from file ./ibpm_01.cholesky...done
+Loading Cholesky factorization from file ./ibpm_02.cholesky...done
+Loading Cholesky factorization from file ./ibpm_03.cholesky...done
+
+Initial timestep = 87000
+
+Writing Tecplot file every 1 step(s)
+Writing restart file every 100 step(s)
+Writing forces every 1 step(s)
+
+Writing Tecplot file ./ibpm87000.plt
+Writing restart file ./ibpm87000.bin...done
+Integrating for 500 steps
+
+step 1
+    x force:          1.42783, y force:        -0.109661
+Writing Tecplot file ./ibpm87001.plt
+
+step 2
+    x force:           1.4278, y force:        -0.107812
+Writing Tecplot file ./ibpm87002.plt
+
+step 3
+    x force:          1.42776, y force:        -0.105931
+Writing Tecplot file ./ibpm87003.plt
+
+step 4
+    x force:          1.42773, y force:        -0.104017
+Writing Tecplot file ./ibpm87004.plt
+
+step 5
+    x force:           1.4277, y force:        -0.102072
+Writing Tecplot file ./ibpm87005.plt
+
+step 6
+    x force:          1.42766, y force:        -0.100095
+Writing Tecplot file ./ibpm87006.plt
+
+step 7
+    x force:          1.42763, y force:       -0.0980884
+Writing Tecplot file ./ibpm87007.plt
+
+step 8
+    x force:          1.42759, y force:       -0.0960517
+Writing Tecplot file ./ibpm87008.plt
+
+step 9
+    x force:          1.42755, y force:       -0.0939858
+Writing Tecplot file ./ibpm87009.plt
+
+step 10
+    x force:          1.42751, y force:       -0.0918912
+Writing Tecplot file ./ibpm87010.plt
+
+step 11
+    x force:          1.42747, y force:       -0.0897687
+Writing Tecplot file ./ibpm87011.plt
+
+step 12
+    x force:          1.42743, y force:       -0.0876189
+Writing Tecplot file ./ibpm87012.plt
+
+step 13
+    x force:          1.42739, y force:       -0.0854424
+Writing Tecplot file ./ibpm87013.plt
+
+step 14
+    x force:          1.42735, y force:       -0.0832398
+Writing Tecplot file ./ibpm87014.plt
+
+step 15
+    x force:           1.4273, y force:       -0.0810119
+Writing Tecplot file ./ibpm87015.plt
+
+step 16
+    x force:          1.42726, y force:       -0.0787594
+Writing Tecplot file ./ibpm87016.plt
+
+step 17
+    x force:          1.42721, y force:       -0.0764828
+Writing Tecplot file ./ibpm87017.plt
+
+step 18
+    x force:          1.42717, y force:       -0.0741829
+Writing Tecplot file ./ibpm87018.plt
+
+step 19
+    x force:          1.42712, y force:       -0.0718604
+Writing Tecplot file ./ibpm87019.plt
+
+step 20
+    x force:          1.42708, y force:       -0.0695161
+Writing Tecplot file ./ibpm87020.plt
+
+step 21
+    x force:          1.42703, y force:       -0.0671505
+Writing Tecplot file ./ibpm87021.plt
+
+step 22
+    x force:          1.42698, y force:       -0.0647644
+Writing Tecplot file ./ibpm87022.plt
+
+step 23
+    x force:          1.42694, y force:       -0.0623586
+Writing Tecplot file ./ibpm87023.plt
+
+step 24
+    x force:          1.42689, y force:       -0.0599338
+Writing Tecplot file ./ibpm87024.plt
+
+step 25
+    x force:          1.42684, y force:       -0.0574906
+Writing Tecplot file ./ibpm87025.plt
+
+step 26
+    x force:          1.42679, y force:         -0.05503
+Writing Tecplot file ./ibpm87026.plt
+
+step 27
+    x force:          1.42674, y force:       -0.0525525
+Writing Tecplot file ./ibpm87027.plt
+
+step 28
+    x force:           1.4267, y force:       -0.0500589
+Writing Tecplot file ./ibpm87028.plt
+
+step 29
+    x force:          1.42665, y force:       -0.0475501
+Writing Tecplot file ./ibpm87029.plt
+
+step 30
+    x force:           1.4266, y force:       -0.0450267
+Writing Tecplot file ./ibpm87030.plt
+
+step 31
+    x force:          1.42655, y force:       -0.0424896
+Writing Tecplot file ./ibpm87031.plt
+
+step 32
+    x force:           1.4265, y force:       -0.0399394
+Writing Tecplot file ./ibpm87032.plt
+
+step 33
+    x force:          1.42646, y force:       -0.0373771
+Writing Tecplot file ./ibpm87033.plt
+
+step 34
+    x force:          1.42641, y force:       -0.0348032
+Writing Tecplot file ./ibpm87034.plt
+
+step 35
+    x force:          1.42636, y force:       -0.0322187
+Writing Tecplot file ./ibpm87035.plt
+
+step 36
+    x force:          1.42632, y force:       -0.0296244
+Writing Tecplot file ./ibpm87036.plt
+
+step 37
+    x force:          1.42627, y force:       -0.0270209
+Writing Tecplot file ./ibpm87037.plt
+
+step 38
+    x force:          1.42623, y force:       -0.0244091
+Writing Tecplot file ./ibpm87038.plt
+
+step 39
+    x force:          1.42618, y force:       -0.0217898
+Writing Tecplot file ./ibpm87039.plt
+
+step 40
+    x force:          1.42614, y force:       -0.0191638
+Writing Tecplot file ./ibpm87040.plt
+
+step 41
+    x force:           1.4261, y force:       -0.0165319
+Writing Tecplot file ./ibpm87041.plt
+
+step 42
+    x force:          1.42605, y force:       -0.0138949
+Writing Tecplot file ./ibpm87042.plt
+
+step 43
+    x force:          1.42601, y force:       -0.0112535
+Writing Tecplot file ./ibpm87043.plt
+
+step 44
+    x force:          1.42597, y force:      -0.00860864
+Writing Tecplot file ./ibpm87044.plt
+
+step 45
+    x force:          1.42593, y force:      -0.00596107
+Writing Tecplot file ./ibpm87045.plt
+
+step 46
+    x force:          1.42589, y force:       -0.0033116
+Writing Tecplot file ./ibpm87046.plt
+
+step 47
+    x force:          1.42586, y force:     -0.000661034
+Writing Tecplot file ./ibpm87047.plt
+
+step 48
+    x force:          1.42582, y force:       0.00198981
+Writing Tecplot file ./ibpm87048.plt
+
+step 49
+    x force:          1.42579, y force:       0.00464014
+Writing Tecplot file ./ibpm87049.plt
+
+step 50
+    x force:          1.42575, y force:       0.00728914
+Writing Tecplot file ./ibpm87050.plt
+
+step 51
+    x force:          1.42572, y force:       0.00993599
+Writing Tecplot file ./ibpm87051.plt
+
+step 52
+    x force:          1.42569, y force:        0.0125799
+Writing Tecplot file ./ibpm87052.plt
+
+step 53
+    x force:          1.42566, y force:        0.0152201
+Writing Tecplot file ./ibpm87053.plt
+
+step 54
+    x force:          1.42563, y force:        0.0178557
+Writing Tecplot file ./ibpm87054.plt
+
+step 55
+    x force:           1.4256, y force:        0.0204859
+Writing Tecplot file ./ibpm87055.plt
+
+step 56
+    x force:          1.42557, y force:          0.02311
+Writing Tecplot file ./ibpm87056.plt
+
+step 57
+    x force:          1.42555, y force:        0.0257271
+Writing Tecplot file ./ibpm87057.plt
+
+step 58
+    x force:          1.42553, y force:        0.0283365
+Writing Tecplot file ./ibpm87058.plt
+
+step 59
+    x force:           1.4255, y force:        0.0309372
+Writing Tecplot file ./ibpm87059.plt
+
+step 60
+    x force:          1.42548, y force:        0.0335287
+Writing Tecplot file ./ibpm87060.plt
+
+step 61
+    x force:          1.42546, y force:          0.03611
+Writing Tecplot file ./ibpm87061.plt
+
+step 62
+    x force:          1.42545, y force:        0.0386803
+Writing Tecplot file ./ibpm87062.plt
+
+step 63
+    x force:          1.42543, y force:        0.0412389
+Writing Tecplot file ./ibpm87063.plt
+
+step 64
+    x force:          1.42542, y force:         0.043785
+Writing Tecplot file ./ibpm87064.plt
+
+step 65
+    x force:           1.4254, y force:        0.0463178
+Writing Tecplot file ./ibpm87065.plt
+
+step 66
+    x force:          1.42539, y force:        0.0488366
+Writing Tecplot file ./ibpm87066.plt
+
+step 67
+    x force:          1.42538, y force:        0.0513405
+Writing Tecplot file ./ibpm87067.plt
+
+step 68
+    x force:          1.42538, y force:        0.0538289
+Writing Tecplot file ./ibpm87068.plt
+
+step 69
+    x force:          1.42537, y force:        0.0563008
+Writing Tecplot file ./ibpm87069.plt
+
+step 70
+    x force:          1.42537, y force:        0.0587557
+Writing Tecplot file ./ibpm87070.plt
+
+step 71
+    x force:          1.42536, y force:        0.0611926
+Writing Tecplot file ./ibpm87071.plt
+
+step 72
+    x force:          1.42536, y force:         0.063611
+Writing Tecplot file ./ibpm87072.plt
+
+step 73
+    x force:          1.42536, y force:          0.06601
+Writing Tecplot file ./ibpm87073.plt
+
+step 74
+    x force:          1.42537, y force:        0.0683889
+Writing Tecplot file ./ibpm87074.plt
+
+step 75
+    x force:          1.42537, y force:        0.0707469
+Writing Tecplot file ./ibpm87075.plt
+
+step 76
+    x force:          1.42538, y force:        0.0730835
+Writing Tecplot file ./ibpm87076.plt
+
+step 77
+    x force:          1.42538, y force:        0.0753977
+Writing Tecplot file ./ibpm87077.plt
+
+step 78
+    x force:          1.42539, y force:         0.077689
+Writing Tecplot file ./ibpm87078.plt
+
+step 79
+    x force:           1.4254, y force:        0.0799566
+Writing Tecplot file ./ibpm87079.plt
+
+step 80
+    x force:          1.42541, y force:        0.0821998
+Writing Tecplot file ./ibpm87080.plt
+
+step 81
+    x force:          1.42543, y force:         0.084418
+Writing Tecplot file ./ibpm87081.plt
+
+step 82
+    x force:          1.42544, y force:        0.0866104
+Writing Tecplot file ./ibpm87082.plt
+
+step 83
+    x force:          1.42546, y force:        0.0887764
+Writing Tecplot file ./ibpm87083.plt
+
+step 84
+    x force:          1.42548, y force:        0.0909154
+Writing Tecplot file ./ibpm87084.plt
+
+step 85
+    x force:           1.4255, y force:        0.0930266
+Writing Tecplot file ./ibpm87085.plt
+
+step 86
+    x force:          1.42552, y force:        0.0951094
+Writing Tecplot file ./ibpm87086.plt
+
+step 87
+    x force:          1.42554, y force:        0.0971632
+Writing Tecplot file ./ibpm87087.plt
+
+step 88
+    x force:          1.42557, y force:        0.0991873
+Writing Tecplot file ./ibpm87088.plt
+
+step 89
+    x force:           1.4256, y force:         0.101181
+Writing Tecplot file ./ibpm87089.plt
+
+step 90
+    x force:          1.42562, y force:         0.103144
+Writing Tecplot file ./ibpm87090.plt
+
+step 91
+    x force:          1.42565, y force:         0.105076
+Writing Tecplot file ./ibpm87091.plt
+
+step 92
+    x force:          1.42568, y force:         0.106975
+Writing Tecplot file ./ibpm87092.plt
+
+step 93
+    x force:          1.42571, y force:         0.108842
+Writing Tecplot file ./ibpm87093.plt
+
+step 94
+    x force:          1.42575, y force:         0.110675
+Writing Tecplot file ./ibpm87094.plt
+
+step 95
+    x force:          1.42578, y force:         0.112475
+Writing Tecplot file ./ibpm87095.plt
+
+step 96
+    x force:          1.42581, y force:          0.11424
+Writing Tecplot file ./ibpm87096.plt
+
+step 97
+    x force:          1.42585, y force:         0.115971
+Writing Tecplot file ./ibpm87097.plt
+
+step 98
+    x force:          1.42589, y force:         0.117666
+Writing Tecplot file ./ibpm87098.plt
+
+step 99
+    x force:          1.42593, y force:         0.119325
+Writing Tecplot file ./ibpm87099.plt
+
+step 100
+    x force:          1.42596, y force:         0.120948
+Writing Tecplot file ./ibpm87100.plt
+Writing restart file ./ibpm87100.bin...done
+
+step 101
+    x force:          1.42601, y force:         0.122533
+Writing Tecplot file ./ibpm87101.plt
+
+step 102
+    x force:          1.42605, y force:         0.124082
+Writing Tecplot file ./ibpm87102.plt
+
+step 103
+    x force:          1.42609, y force:         0.125592
+Writing Tecplot file ./ibpm87103.plt
+
+step 104
+    x force:          1.42613, y force:         0.127064
+Writing Tecplot file ./ibpm87104.plt
+
+step 105
+    x force:          1.42617, y force:         0.128497
+Writing Tecplot file ./ibpm87105.plt
+
+step 106
+    x force:          1.42622, y force:         0.129891
+Writing Tecplot file ./ibpm87106.plt
+
+step 107
+    x force:          1.42626, y force:         0.131246
+Writing Tecplot file ./ibpm87107.plt
+
+step 108
+    x force:          1.42631, y force:          0.13256
+Writing Tecplot file ./ibpm87108.plt
+
+step 109
+    x force:          1.42635, y force:         0.133833
+Writing Tecplot file ./ibpm87109.plt
+
+step 110
+    x force:           1.4264, y force:         0.135066
+Writing Tecplot file ./ibpm87110.plt
+
+step 111
+    x force:          1.42645, y force:         0.136258
+Writing Tecplot file ./ibpm87111.plt
+
+step 112
+    x force:          1.42649, y force:         0.137408
+Writing Tecplot file ./ibpm87112.plt
+
+step 113
+    x force:          1.42654, y force:         0.138516
+Writing Tecplot file ./ibpm87113.plt
+
+step 114
+    x force:          1.42659, y force:         0.139581
+Writing Tecplot file ./ibpm87114.plt
+
+step 115
+    x force:          1.42664, y force:         0.140604
+Writing Tecplot file ./ibpm87115.plt
+
+step 116
+    x force:          1.42668, y force:         0.141584
+Writing Tecplot file ./ibpm87116.plt
+
+step 117
+    x force:          1.42673, y force:         0.142521
+Writing Tecplot file ./ibpm87117.plt
+
+step 118
+    x force:          1.42678, y force:         0.143414
+Writing Tecplot file ./ibpm87118.plt
+
+step 119
+    x force:          1.42683, y force:         0.144264
+Writing Tecplot file ./ibpm87119.plt
+
+step 120
+    x force:          1.42688, y force:         0.145069
+Writing Tecplot file ./ibpm87120.plt
+
+step 121
+    x force:          1.42692, y force:          0.14583
+Writing Tecplot file ./ibpm87121.plt
+
+step 122
+    x force:          1.42697, y force:         0.146547
+Writing Tecplot file ./ibpm87122.plt
+
+step 123
+    x force:          1.42702, y force:         0.147219
+Writing Tecplot file ./ibpm87123.plt
+
+step 124
+    x force:          1.42706, y force:         0.147846
+Writing Tecplot file ./ibpm87124.plt
+
+step 125
+    x force:          1.42711, y force:         0.148428
+Writing Tecplot file ./ibpm87125.plt
+
+step 126
+    x force:          1.42716, y force:         0.148964
+Writing Tecplot file ./ibpm87126.plt
+
+step 127
+    x force:           1.4272, y force:         0.149455
+Writing Tecplot file ./ibpm87127.plt
+
+step 128
+    x force:          1.42725, y force:         0.149901
+Writing Tecplot file ./ibpm87128.plt
+
+step 129
+    x force:          1.42729, y force:           0.1503
+Writing Tecplot file ./ibpm87129.plt
+
+step 130
+    x force:          1.42733, y force:         0.150654
+Writing Tecplot file ./ibpm87130.plt
+
+step 131
+    x force:          1.42738, y force:         0.150962
+Writing Tecplot file ./ibpm87131.plt
+
+step 132
+    x force:          1.42742, y force:         0.151224
+Writing Tecplot file ./ibpm87132.plt
+
+step 133
+    x force:          1.42746, y force:         0.151439
+Writing Tecplot file ./ibpm87133.plt
+
+step 134
+    x force:           1.4275, y force:         0.151609
+Writing Tecplot file ./ibpm87134.plt
+
+step 135
+    x force:          1.42754, y force:         0.151732
+Writing Tecplot file ./ibpm87135.plt
+
+step 136
+    x force:          1.42758, y force:         0.151809
+Writing Tecplot file ./ibpm87136.plt
+
+step 137
+    x force:          1.42762, y force:          0.15184
+Writing Tecplot file ./ibpm87137.plt
+
+step 138
+    x force:          1.42765, y force:         0.151824
+Writing Tecplot file ./ibpm87138.plt
+
+step 139
+    x force:          1.42769, y force:         0.151762
+Writing Tecplot file ./ibpm87139.plt
+
+step 140
+    x force:          1.42772, y force:         0.151654
+Writing Tecplot file ./ibpm87140.plt
+
+step 141
+    x force:          1.42775, y force:           0.1515
+Writing Tecplot file ./ibpm87141.plt
+
+step 142
+    x force:          1.42779, y force:         0.151299
+Writing Tecplot file ./ibpm87142.plt
+
+step 143
+    x force:          1.42782, y force:         0.151052
+Writing Tecplot file ./ibpm87143.plt
+
+step 144
+    x force:          1.42785, y force:          0.15076
+Writing Tecplot file ./ibpm87144.plt
+
+step 145
+    x force:          1.42787, y force:         0.150421
+Writing Tecplot file ./ibpm87145.plt
+
+step 146
+    x force:           1.4279, y force:         0.150036
+Writing Tecplot file ./ibpm87146.plt
+
+step 147
+    x force:          1.42792, y force:         0.149606
+Writing Tecplot file ./ibpm87147.plt
+
+step 148
+    x force:          1.42795, y force:          0.14913
+Writing Tecplot file ./ibpm87148.plt
+
+step 149
+    x force:          1.42797, y force:         0.148609
+Writing Tecplot file ./ibpm87149.plt
+
+step 150
+    x force:          1.42799, y force:         0.148043
+Writing Tecplot file ./ibpm87150.plt
+
+step 151
+    x force:          1.42801, y force:         0.147431
+Writing Tecplot file ./ibpm87151.plt
+
+step 152
+    x force:          1.42803, y force:         0.146775
+Writing Tecplot file ./ibpm87152.plt
+
+step 153
+    x force:          1.42804, y force:         0.146074
+Writing Tecplot file ./ibpm87153.plt
+
+step 154
+    x force:          1.42806, y force:         0.145328
+Writing Tecplot file ./ibpm87154.plt
+
+step 155
+    x force:          1.42807, y force:         0.144538
+Writing Tecplot file ./ibpm87155.plt
+
+step 156
+    x force:          1.42808, y force:         0.143704
+Writing Tecplot file ./ibpm87156.plt
+
+step 157
+    x force:          1.42809, y force:         0.142827
+Writing Tecplot file ./ibpm87157.plt
+
+step 158
+    x force:           1.4281, y force:         0.141905
+Writing Tecplot file ./ibpm87158.plt
+
+step 159
+    x force:           1.4281, y force:         0.140941
+Writing Tecplot file ./ibpm87159.plt
+
+step 160
+    x force:          1.42811, y force:         0.139934
+Writing Tecplot file ./ibpm87160.plt
+
+step 161
+    x force:          1.42811, y force:         0.138884
+Writing Tecplot file ./ibpm87161.plt
+
+step 162
+    x force:          1.42811, y force:         0.137792
+Writing Tecplot file ./ibpm87162.plt
+
+step 163
+    x force:          1.42811, y force:         0.136658
+Writing Tecplot file ./ibpm87163.plt
+
+step 164
+    x force:          1.42811, y force:         0.135483
+Writing Tecplot file ./ibpm87164.plt
+
+step 165
+    x force:           1.4281, y force:         0.134266
+Writing Tecplot file ./ibpm87165.plt
+
+step 166
+    x force:           1.4281, y force:         0.133008
+Writing Tecplot file ./ibpm87166.plt
+
+step 167
+    x force:          1.42809, y force:          0.13171
+Writing Tecplot file ./ibpm87167.plt
+
+step 168
+    x force:          1.42808, y force:         0.130372
+Writing Tecplot file ./ibpm87168.plt
+
+step 169
+    x force:          1.42807, y force:         0.128995
+Writing Tecplot file ./ibpm87169.plt
+
+step 170
+    x force:          1.42806, y force:         0.127578
+Writing Tecplot file ./ibpm87170.plt
+
+step 171
+    x force:          1.42805, y force:         0.126122
+Writing Tecplot file ./ibpm87171.plt
+
+step 172
+    x force:          1.42803, y force:         0.124627
+Writing Tecplot file ./ibpm87172.plt
+
+step 173
+    x force:          1.42801, y force:         0.123095
+Writing Tecplot file ./ibpm87173.plt
+
+step 174
+    x force:          1.42799, y force:         0.121526
+Writing Tecplot file ./ibpm87174.plt
+
+step 175
+    x force:          1.42797, y force:         0.119919
+Writing Tecplot file ./ibpm87175.plt
+
+step 176
+    x force:          1.42795, y force:         0.118276
+Writing Tecplot file ./ibpm87176.plt
+
+step 177
+    x force:          1.42793, y force:         0.116597
+Writing Tecplot file ./ibpm87177.plt
+
+step 178
+    x force:          1.42791, y force:         0.114883
+Writing Tecplot file ./ibpm87178.plt
+
+step 179
+    x force:          1.42788, y force:         0.113134
+Writing Tecplot file ./ibpm87179.plt
+
+step 180
+    x force:          1.42785, y force:          0.11135
+Writing Tecplot file ./ibpm87180.plt
+
+step 181
+    x force:          1.42782, y force:         0.109532
+Writing Tecplot file ./ibpm87181.plt
+
+step 182
+    x force:          1.42779, y force:         0.107681
+Writing Tecplot file ./ibpm87182.plt
+
+step 183
+    x force:          1.42776, y force:         0.105797
+Writing Tecplot file ./ibpm87183.plt
+
+step 184
+    x force:          1.42773, y force:         0.103881
+Writing Tecplot file ./ibpm87184.plt
+
+step 185
+    x force:           1.4277, y force:         0.101934
+Writing Tecplot file ./ibpm87185.plt
+
+step 186
+    x force:          1.42766, y force:        0.0999554
+Writing Tecplot file ./ibpm87186.plt
+
+step 187
+    x force:          1.42762, y force:        0.0979464
+Writing Tecplot file ./ibpm87187.plt
+
+step 188
+    x force:          1.42759, y force:        0.0959076
+Writing Tecplot file ./ibpm87188.plt
+
+step 189
+    x force:          1.42755, y force:        0.0938397
+Writing Tecplot file ./ibpm87189.plt
+
+step 190
+    x force:          1.42751, y force:        0.0917431
+Writing Tecplot file ./ibpm87190.plt
+
+step 191
+    x force:          1.42747, y force:        0.0896187
+Writing Tecplot file ./ibpm87191.plt
+
+step 192
+    x force:          1.42743, y force:        0.0874669
+Writing Tecplot file ./ibpm87192.plt
+
+step 193
+    x force:          1.42739, y force:        0.0852885
+Writing Tecplot file ./ibpm87193.plt
+
+step 194
+    x force:          1.42734, y force:        0.0830842
+Writing Tecplot file ./ibpm87194.plt
+
+step 195
+    x force:           1.4273, y force:        0.0808545
+Writing Tecplot file ./ibpm87195.plt
+
+step 196
+    x force:          1.42726, y force:        0.0786002
+Writing Tecplot file ./ibpm87196.plt
+
+step 197
+    x force:          1.42721, y force:         0.076322
+Writing Tecplot file ./ibpm87197.plt
+
+step 198
+    x force:          1.42717, y force:        0.0740205
+Writing Tecplot file ./ibpm87198.plt
+
+step 199
+    x force:          1.42712, y force:        0.0716965
+Writing Tecplot file ./ibpm87199.plt
+
+step 200
+    x force:          1.42707, y force:        0.0693506
+Writing Tecplot file ./ibpm87200.plt
+Writing restart file ./ibpm87200.bin...done
+
+step 201
+    x force:          1.42703, y force:        0.0669835
+Writing Tecplot file ./ibpm87201.plt
+
+step 202
+    x force:          1.42698, y force:         0.064596
+Writing Tecplot file ./ibpm87202.plt
+
+step 203
+    x force:          1.42693, y force:        0.0621889
+Writing Tecplot file ./ibpm87203.plt
+
+step 204
+    x force:          1.42688, y force:        0.0597627
+Writing Tecplot file ./ibpm87204.plt
+
+step 205
+    x force:          1.42684, y force:        0.0573183
+Writing Tecplot file ./ibpm87205.plt
+
+step 206
+    x force:          1.42679, y force:        0.0548564
+Writing Tecplot file ./ibpm87206.plt
+
+step 207
+    x force:          1.42674, y force:        0.0523778
+Writing Tecplot file ./ibpm87207.plt
+
+step 208
+    x force:          1.42669, y force:        0.0498831
+Writing Tecplot file ./ibpm87208.plt
+
+step 209
+    x force:          1.42664, y force:        0.0473732
+Writing Tecplot file ./ibpm87209.plt
+
+step 210
+    x force:           1.4266, y force:        0.0448488
+Writing Tecplot file ./ibpm87210.plt
+
+step 211
+    x force:          1.42655, y force:        0.0423108
+Writing Tecplot file ./ibpm87211.plt
+
+step 212
+    x force:           1.4265, y force:        0.0397597
+Writing Tecplot file ./ibpm87212.plt
+
+step 213
+    x force:          1.42645, y force:        0.0371965
+Writing Tecplot file ./ibpm87213.plt
+
+step 214
+    x force:          1.42641, y force:        0.0346219
+Writing Tecplot file ./ibpm87214.plt
+
+step 215
+    x force:          1.42636, y force:        0.0320367
+Writing Tecplot file ./ibpm87215.plt
+
+step 216
+    x force:          1.42631, y force:        0.0294416
+Writing Tecplot file ./ibpm87216.plt
+
+step 217
+    x force:          1.42627, y force:        0.0268375
+Writing Tecplot file ./ibpm87217.plt
+
+step 218
+    x force:          1.42622, y force:        0.0242252
+Writing Tecplot file ./ibpm87218.plt
+
+step 219
+    x force:          1.42618, y force:        0.0216054
+Writing Tecplot file ./ibpm87219.plt
+
+step 220
+    x force:          1.42614, y force:         0.018979
+Writing Tecplot file ./ibpm87220.plt
+
+step 221
+    x force:          1.42609, y force:        0.0163467
+Writing Tecplot file ./ibpm87221.plt
+
+step 222
+    x force:          1.42605, y force:        0.0137093
+Writing Tecplot file ./ibpm87222.plt
+
+step 223
+    x force:          1.42601, y force:        0.0110677
+Writing Tecplot file ./ibpm87223.plt
+
+step 224
+    x force:          1.42597, y force:       0.00842258
+Writing Tecplot file ./ibpm87224.plt
+
+step 225
+    x force:          1.42593, y force:       0.00577484
+Writing Tecplot file ./ibpm87225.plt
+
+step 226
+    x force:          1.42589, y force:       0.00312527
+Writing Tecplot file ./ibpm87226.plt
+
+step 227
+    x force:          1.42585, y force:      0.000474662
+Writing Tecplot file ./ibpm87227.plt
+
+step 228
+    x force:          1.42582, y force:      -0.00217618
+Writing Tecplot file ./ibpm87228.plt
+
+step 229
+    x force:          1.42578, y force:      -0.00482643
+Writing Tecplot file ./ibpm87229.plt
+
+step 230
+    x force:          1.42575, y force:      -0.00747531
+Writing Tecplot file ./ibpm87230.plt
+
+step 231
+    x force:          1.42572, y force:        -0.010122
+Writing Tecplot file ./ibpm87231.plt
+
+step 232
+    x force:          1.42568, y force:       -0.0127657
+Writing Tecplot file ./ibpm87232.plt
+
+step 233
+    x force:          1.42565, y force:       -0.0154055
+Writing Tecplot file ./ibpm87233.plt
+
+step 234
+    x force:          1.42563, y force:       -0.0180408
+Writing Tecplot file ./ibpm87234.plt
+
+step 235
+    x force:           1.4256, y force:       -0.0206706
+Writing Tecplot file ./ibpm87235.plt
+
+step 236
+    x force:          1.42557, y force:       -0.0232942
+Writing Tecplot file ./ibpm87236.plt
+
+step 237
+    x force:          1.42555, y force:       -0.0259108
+Writing Tecplot file ./ibpm87237.plt
+
+step 238
+    x force:          1.42552, y force:       -0.0285196
+Writing Tecplot file ./ibpm87238.plt
+
+step 239
+    x force:           1.4255, y force:       -0.0311197
+Writing Tecplot file ./ibpm87239.plt
+
+step 240
+    x force:          1.42548, y force:       -0.0337105
+Writing Tecplot file ./ibpm87240.plt
+
+step 241
+    x force:          1.42546, y force:        -0.036291
+Writing Tecplot file ./ibpm87241.plt
+
+step 242
+    x force:          1.42545, y force:       -0.0388605
+Writing Tecplot file ./ibpm87242.plt
+
+step 243
+    x force:          1.42543, y force:       -0.0414183
+Writing Tecplot file ./ibpm87243.plt
+
+step 244
+    x force:          1.42542, y force:       -0.0439635
+Writing Tecplot file ./ibpm87244.plt
+
+step 245
+    x force:           1.4254, y force:       -0.0464953
+Writing Tecplot file ./ibpm87245.plt
+
+step 246
+    x force:          1.42539, y force:       -0.0490131
+Writing Tecplot file ./ibpm87246.plt
+
+step 247
+    x force:          1.42538, y force:       -0.0515159
+Writing Tecplot file ./ibpm87247.plt
+
+step 248
+    x force:          1.42538, y force:       -0.0540031
+Writing Tecplot file ./ibpm87248.plt
+
+step 249
+    x force:          1.42537, y force:       -0.0564739
+Writing Tecplot file ./ibpm87249.plt
+
+step 250
+    x force:          1.42537, y force:       -0.0589275
+Writing Tecplot file ./ibpm87250.plt
+
+step 251
+    x force:          1.42536, y force:       -0.0613632
+Writing Tecplot file ./ibpm87251.plt
+
+step 252
+    x force:          1.42536, y force:       -0.0637802
+Writing Tecplot file ./ibpm87252.plt
+
+step 253
+    x force:          1.42536, y force:       -0.0661778
+Writing Tecplot file ./ibpm87253.plt
+
+step 254
+    x force:          1.42537, y force:       -0.0685552
+Writing Tecplot file ./ibpm87254.plt
+
+step 255
+    x force:          1.42537, y force:       -0.0709118
+Writing Tecplot file ./ibpm87255.plt
+
+step 256
+    x force:          1.42538, y force:       -0.0732468
+Writing Tecplot file ./ibpm87256.plt
+
+step 257
+    x force:          1.42538, y force:       -0.0755594
+Writing Tecplot file ./ibpm87257.plt
+
+step 258
+    x force:          1.42539, y force:        -0.077849
+Writing Tecplot file ./ibpm87258.plt
+
+step 259
+    x force:           1.4254, y force:        -0.080115
+Writing Tecplot file ./ibpm87259.plt
+
+step 260
+    x force:          1.42542, y force:       -0.0823564
+Writing Tecplot file ./ibpm87260.plt
+
+step 261
+    x force:          1.42543, y force:       -0.0845728
+Writing Tecplot file ./ibpm87261.plt
+
+step 262
+    x force:          1.42544, y force:       -0.0867634
+Writing Tecplot file ./ibpm87262.plt
+
+step 263
+    x force:          1.42546, y force:       -0.0889275
+Writing Tecplot file ./ibpm87263.plt
+
+step 264
+    x force:          1.42548, y force:       -0.0910645
+Writing Tecplot file ./ibpm87264.plt
+
+step 265
+    x force:           1.4255, y force:       -0.0931737
+Writing Tecplot file ./ibpm87265.plt
+
+step 266
+    x force:          1.42552, y force:       -0.0952545
+Writing Tecplot file ./ibpm87266.plt
+
+step 267
+    x force:          1.42555, y force:       -0.0973062
+Writing Tecplot file ./ibpm87267.plt
+
+step 268
+    x force:          1.42557, y force:       -0.0993282
+Writing Tecplot file ./ibpm87268.plt
+
+step 269
+    x force:           1.4256, y force:         -0.10132
+Writing Tecplot file ./ibpm87269.plt
+
+step 270
+    x force:          1.42562, y force:        -0.103281
+Writing Tecplot file ./ibpm87270.plt
+
+step 271
+    x force:          1.42565, y force:         -0.10521
+Writing Tecplot file ./ibpm87271.plt
+
+step 272
+    x force:          1.42568, y force:        -0.107107
+Writing Tecplot file ./ibpm87272.plt
+
+step 273
+    x force:          1.42572, y force:        -0.108971
+Writing Tecplot file ./ibpm87273.plt
+
+step 274
+    x force:          1.42575, y force:        -0.110803
+Writing Tecplot file ./ibpm87274.plt
+
+step 275
+    x force:          1.42578, y force:          -0.1126
+Writing Tecplot file ./ibpm87275.plt
+
+step 276
+    x force:          1.42582, y force:        -0.114363
+Writing Tecplot file ./ibpm87276.plt
+
+step 277
+    x force:          1.42585, y force:        -0.116091
+Writing Tecplot file ./ibpm87277.plt
+
+step 278
+    x force:          1.42589, y force:        -0.117783
+Writing Tecplot file ./ibpm87278.plt
+
+step 279
+    x force:          1.42593, y force:         -0.11944
+Writing Tecplot file ./ibpm87279.plt
+
+step 280
+    x force:          1.42597, y force:         -0.12106
+Writing Tecplot file ./ibpm87280.plt
+
+step 281
+    x force:          1.42601, y force:        -0.122643
+Writing Tecplot file ./ibpm87281.plt
+
+step 282
+    x force:          1.42605, y force:        -0.124189
+Writing Tecplot file ./ibpm87282.plt
+
+step 283
+    x force:          1.42609, y force:        -0.125696
+Writing Tecplot file ./ibpm87283.plt
+
+step 284
+    x force:          1.42613, y force:        -0.127166
+Writing Tecplot file ./ibpm87284.plt
+
+step 285
+    x force:          1.42618, y force:        -0.128596
+Writing Tecplot file ./ibpm87285.plt
+
+step 286
+    x force:          1.42622, y force:        -0.129987
+Writing Tecplot file ./ibpm87286.plt
+
+step 287
+    x force:          1.42627, y force:        -0.131339
+Writing Tecplot file ./ibpm87287.plt
+
+step 288
+    x force:          1.42631, y force:         -0.13265
+Writing Tecplot file ./ibpm87288.plt
+
+step 289
+    x force:          1.42636, y force:        -0.133921
+Writing Tecplot file ./ibpm87289.plt
+
+step 290
+    x force:           1.4264, y force:        -0.135151
+Writing Tecplot file ./ibpm87290.plt
+
+step 291
+    x force:          1.42645, y force:        -0.136339
+Writing Tecplot file ./ibpm87291.plt
+
+step 292
+    x force:           1.4265, y force:        -0.137486
+Writing Tecplot file ./ibpm87292.plt
+
+step 293
+    x force:          1.42654, y force:        -0.138591
+Writing Tecplot file ./ibpm87293.plt
+
+step 294
+    x force:          1.42659, y force:        -0.139654
+Writing Tecplot file ./ibpm87294.plt
+
+step 295
+    x force:          1.42664, y force:        -0.140674
+Writing Tecplot file ./ibpm87295.plt
+
+step 296
+    x force:          1.42669, y force:        -0.141651
+Writing Tecplot file ./ibpm87296.plt
+
+step 297
+    x force:          1.42674, y force:        -0.142585
+Writing Tecplot file ./ibpm87297.plt
+
+step 298
+    x force:          1.42678, y force:        -0.143475
+Writing Tecplot file ./ibpm87298.plt
+
+step 299
+    x force:          1.42683, y force:        -0.144321
+Writing Tecplot file ./ibpm87299.plt
+
+step 300
+    x force:          1.42688, y force:        -0.145123
+Writing Tecplot file ./ibpm87300.plt
+Writing restart file ./ibpm87300.bin...done
+
+step 301
+    x force:          1.42693, y force:        -0.145881
+Writing Tecplot file ./ibpm87301.plt
+
+step 302
+    x force:          1.42697, y force:        -0.146595
+Writing Tecplot file ./ibpm87302.plt
+
+step 303
+    x force:          1.42702, y force:        -0.147264
+Writing Tecplot file ./ibpm87303.plt
+
+step 304
+    x force:          1.42707, y force:        -0.147887
+Writing Tecplot file ./ibpm87304.plt
+
+step 305
+    x force:          1.42711, y force:        -0.148466
+Writing Tecplot file ./ibpm87305.plt
+
+step 306
+    x force:          1.42716, y force:        -0.148999
+Writing Tecplot file ./ibpm87306.plt
+
+step 307
+    x force:          1.42721, y force:        -0.149487
+Writing Tecplot file ./ibpm87307.plt
+
+step 308
+    x force:          1.42725, y force:        -0.149929
+Writing Tecplot file ./ibpm87308.plt
+
+step 309
+    x force:          1.42729, y force:        -0.150326
+Writing Tecplot file ./ibpm87309.plt
+
+step 310
+    x force:          1.42734, y force:        -0.150676
+Writing Tecplot file ./ibpm87310.plt
+
+step 311
+    x force:          1.42738, y force:        -0.150981
+Writing Tecplot file ./ibpm87311.plt
+
+step 312
+    x force:          1.42742, y force:        -0.151239
+Writing Tecplot file ./ibpm87312.plt
+
+step 313
+    x force:          1.42746, y force:        -0.151452
+Writing Tecplot file ./ibpm87313.plt
+
+step 314
+    x force:           1.4275, y force:        -0.151618
+Writing Tecplot file ./ibpm87314.plt
+
+step 315
+    x force:          1.42754, y force:        -0.151738
+Writing Tecplot file ./ibpm87315.plt
+
+step 316
+    x force:          1.42758, y force:        -0.151812
+Writing Tecplot file ./ibpm87316.plt
+
+step 317
+    x force:          1.42762, y force:        -0.151839
+Writing Tecplot file ./ibpm87317.plt
+
+step 318
+    x force:          1.42766, y force:         -0.15182
+Writing Tecplot file ./ibpm87318.plt
+
+step 319
+    x force:          1.42769, y force:        -0.151755
+Writing Tecplot file ./ibpm87319.plt
+
+step 320
+    x force:          1.42772, y force:        -0.151644
+Writing Tecplot file ./ibpm87320.plt
+
+step 321
+    x force:          1.42776, y force:        -0.151486
+Writing Tecplot file ./ibpm87321.plt
+
+step 322
+    x force:          1.42779, y force:        -0.151282
+Writing Tecplot file ./ibpm87322.plt
+
+step 323
+    x force:          1.42782, y force:        -0.151032
+Writing Tecplot file ./ibpm87323.plt
+
+step 324
+    x force:          1.42785, y force:        -0.150736
+Writing Tecplot file ./ibpm87324.plt
+
+step 325
+    x force:          1.42788, y force:        -0.150394
+Writing Tecplot file ./ibpm87325.plt
+
+step 326
+    x force:           1.4279, y force:        -0.150006
+Writing Tecplot file ./ibpm87326.plt
+
+step 327
+    x force:          1.42793, y force:        -0.149573
+Writing Tecplot file ./ibpm87327.plt
+
+step 328
+    x force:          1.42795, y force:        -0.149094
+Writing Tecplot file ./ibpm87328.plt
+
+step 329
+    x force:          1.42797, y force:        -0.148569
+Writing Tecplot file ./ibpm87329.plt
+
+step 330
+    x force:          1.42799, y force:           -0.148
+Writing Tecplot file ./ibpm87330.plt
+
+step 331
+    x force:          1.42801, y force:        -0.147385
+Writing Tecplot file ./ibpm87331.plt
+
+step 332
+    x force:          1.42803, y force:        -0.146725
+Writing Tecplot file ./ibpm87332.plt
+
+step 333
+    x force:          1.42804, y force:        -0.146021
+Writing Tecplot file ./ibpm87333.plt
+
+step 334
+    x force:          1.42806, y force:        -0.145272
+Writing Tecplot file ./ibpm87334.plt
+
+step 335
+    x force:          1.42807, y force:        -0.144479
+Writing Tecplot file ./ibpm87335.plt
+
+step 336
+    x force:          1.42808, y force:        -0.143642
+Writing Tecplot file ./ibpm87336.plt
+
+step 337
+    x force:          1.42809, y force:        -0.142762
+Writing Tecplot file ./ibpm87337.plt
+
+step 338
+    x force:           1.4281, y force:        -0.141838
+Writing Tecplot file ./ibpm87338.plt
+
+step 339
+    x force:           1.4281, y force:         -0.14087
+Writing Tecplot file ./ibpm87339.plt
+
+step 340
+    x force:          1.42811, y force:         -0.13986
+Writing Tecplot file ./ibpm87340.plt
+
+step 341
+    x force:          1.42811, y force:        -0.138807
+Writing Tecplot file ./ibpm87341.plt
+
+step 342
+    x force:          1.42811, y force:        -0.137712
+Writing Tecplot file ./ibpm87342.plt
+
+step 343
+    x force:          1.42811, y force:        -0.136575
+Writing Tecplot file ./ibpm87343.plt
+
+step 344
+    x force:          1.42811, y force:        -0.135397
+Writing Tecplot file ./ibpm87344.plt
+
+step 345
+    x force:           1.4281, y force:        -0.134177
+Writing Tecplot file ./ibpm87345.plt
+
+step 346
+    x force:           1.4281, y force:        -0.132917
+Writing Tecplot file ./ibpm87346.plt
+
+step 347
+    x force:          1.42809, y force:        -0.131616
+Writing Tecplot file ./ibpm87347.plt
+
+step 348
+    x force:          1.42808, y force:        -0.130275
+Writing Tecplot file ./ibpm87348.plt
+
+step 349
+    x force:          1.42807, y force:        -0.128894
+Writing Tecplot file ./ibpm87349.plt
+
+step 350
+    x force:          1.42806, y force:        -0.127475
+Writing Tecplot file ./ibpm87350.plt
+
+step 351
+    x force:          1.42804, y force:        -0.126016
+Writing Tecplot file ./ibpm87351.plt
+
+step 352
+    x force:          1.42803, y force:        -0.124519
+Writing Tecplot file ./ibpm87352.plt
+
+step 353
+    x force:          1.42801, y force:        -0.122984
+Writing Tecplot file ./ibpm87353.plt
+
+step 354
+    x force:          1.42799, y force:        -0.121412
+Writing Tecplot file ./ibpm87354.plt
+
+step 355
+    x force:          1.42797, y force:        -0.119803
+Writing Tecplot file ./ibpm87355.plt
+
+step 356
+    x force:          1.42795, y force:        -0.118158
+Writing Tecplot file ./ibpm87356.plt
+
+step 357
+    x force:          1.42793, y force:        -0.116476
+Writing Tecplot file ./ibpm87357.plt
+
+step 358
+    x force:           1.4279, y force:        -0.114759
+Writing Tecplot file ./ibpm87358.plt
+
+step 359
+    x force:          1.42788, y force:        -0.113007
+Writing Tecplot file ./ibpm87359.plt
+
+step 360
+    x force:          1.42785, y force:        -0.111221
+Writing Tecplot file ./ibpm87360.plt
+
+step 361
+    x force:          1.42782, y force:        -0.109401
+Writing Tecplot file ./ibpm87361.plt
+
+step 362
+    x force:          1.42779, y force:        -0.107548
+Writing Tecplot file ./ibpm87362.plt
+
+step 363
+    x force:          1.42776, y force:        -0.105662
+Writing Tecplot file ./ibpm87363.plt
+
+step 364
+    x force:          1.42773, y force:        -0.103744
+Writing Tecplot file ./ibpm87364.plt
+
+step 365
+    x force:          1.42769, y force:        -0.101794
+Writing Tecplot file ./ibpm87365.plt
+
+step 366
+    x force:          1.42766, y force:       -0.0998131
+Writing Tecplot file ./ibpm87366.plt
+
+step 367
+    x force:          1.42762, y force:        -0.097802
+Writing Tecplot file ./ibpm87367.plt
+
+step 368
+    x force:          1.42758, y force:       -0.0957612
+Writing Tecplot file ./ibpm87368.plt
+
+step 369
+    x force:          1.42755, y force:       -0.0936912
+Writing Tecplot file ./ibpm87369.plt
+
+step 370
+    x force:          1.42751, y force:       -0.0915926
+Writing Tecplot file ./ibpm87370.plt
+
+step 371
+    x force:          1.42747, y force:       -0.0894662
+Writing Tecplot file ./ibpm87371.plt
+
+step 372
+    x force:          1.42743, y force:       -0.0873126
+Writing Tecplot file ./ibpm87372.plt
+
+step 373
+    x force:          1.42738, y force:       -0.0851323
+Writing Tecplot file ./ibpm87373.plt
+
+step 374
+    x force:          1.42734, y force:       -0.0829261
+Writing Tecplot file ./ibpm87374.plt
+
+step 375
+    x force:           1.4273, y force:       -0.0806947
+Writing Tecplot file ./ibpm87375.plt
+
+step 376
+    x force:          1.42725, y force:       -0.0784387
+Writing Tecplot file ./ibpm87376.plt
+
+step 377
+    x force:          1.42721, y force:       -0.0761588
+Writing Tecplot file ./ibpm87377.plt
+
+step 378
+    x force:          1.42716, y force:       -0.0738557
+Writing Tecplot file ./ibpm87378.plt
+
+step 379
+    x force:          1.42712, y force:       -0.0715301
+Writing Tecplot file ./ibpm87379.plt
+
+step 380
+    x force:          1.42707, y force:       -0.0691827
+Writing Tecplot file ./ibpm87380.plt
+
+step 381
+    x force:          1.42702, y force:       -0.0668141
+Writing Tecplot file ./ibpm87381.plt
+
+step 382
+    x force:          1.42698, y force:       -0.0644253
+Writing Tecplot file ./ibpm87382.plt
+
+step 383
+    x force:          1.42693, y force:       -0.0620167
+Writing Tecplot file ./ibpm87383.plt
+
+step 384
+    x force:          1.42688, y force:       -0.0595892
+Writing Tecplot file ./ibpm87384.plt
+
+step 385
+    x force:          1.42683, y force:       -0.0571436
+Writing Tecplot file ./ibpm87385.plt
+
+step 386
+    x force:          1.42678, y force:       -0.0546805
+Writing Tecplot file ./ibpm87386.plt
+
+step 387
+    x force:          1.42674, y force:       -0.0522007
+Writing Tecplot file ./ibpm87387.plt
+
+step 388
+    x force:          1.42669, y force:       -0.0497049
+Writing Tecplot file ./ibpm87388.plt
+
+step 389
+    x force:          1.42664, y force:        -0.047194
+Writing Tecplot file ./ibpm87389.plt
+
+step 390
+    x force:          1.42659, y force:       -0.0446686
+Writing Tecplot file ./ibpm87390.plt
+
+step 391
+    x force:          1.42655, y force:       -0.0421296
+Writing Tecplot file ./ibpm87391.plt
+
+step 392
+    x force:           1.4265, y force:       -0.0395777
+Writing Tecplot file ./ibpm87392.plt
+
+step 393
+    x force:          1.42645, y force:       -0.0370136
+Writing Tecplot file ./ibpm87393.plt
+
+step 394
+    x force:           1.4264, y force:       -0.0344382
+Writing Tecplot file ./ibpm87394.plt
+
+step 395
+    x force:          1.42636, y force:       -0.0318523
+Writing Tecplot file ./ibpm87395.plt
+
+step 396
+    x force:          1.42631, y force:       -0.0292566
+Writing Tecplot file ./ibpm87396.plt
+
+step 397
+    x force:          1.42627, y force:       -0.0266519
+Writing Tecplot file ./ibpm87397.plt
+
+step 398
+    x force:          1.42622, y force:        -0.024039
+Writing Tecplot file ./ibpm87398.plt
+
+step 399
+    x force:          1.42618, y force:       -0.0214187
+Writing Tecplot file ./ibpm87399.plt
+
+step 400
+    x force:          1.42613, y force:       -0.0187918
+Writing Tecplot file ./ibpm87400.plt
+Writing restart file ./ibpm87400.bin...done
+
+step 401
+    x force:          1.42609, y force:       -0.0161591
+Writing Tecplot file ./ibpm87401.plt
+
+step 402
+    x force:          1.42605, y force:       -0.0135214
+Writing Tecplot file ./ibpm87402.plt
+
+step 403
+    x force:          1.42601, y force:       -0.0108795
+Writing Tecplot file ./ibpm87403.plt
+
+step 404
+    x force:          1.42597, y force:      -0.00823422
+Writing Tecplot file ./ibpm87404.plt
+
+step 405
+    x force:          1.42593, y force:      -0.00558633
+Writing Tecplot file ./ibpm87405.plt
+
+step 406
+    x force:          1.42589, y force:      -0.00293666
+Writing Tecplot file ./ibpm87406.plt
+
+step 407
+    x force:          1.42585, y force:     -0.000286007
+Writing Tecplot file ./ibpm87407.plt
+
+step 408
+    x force:          1.42582, y force:       0.00236482
+Writing Tecplot file ./ibpm87408.plt
+
+step 409
+    x force:          1.42578, y force:         0.005015
+Writing Tecplot file ./ibpm87409.plt
+
+step 410
+    x force:          1.42575, y force:       0.00766375
+Writing Tecplot file ./ibpm87410.plt
+
+step 411
+    x force:          1.42571, y force:        0.0103102
+Writing Tecplot file ./ibpm87411.plt
+
+step 412
+    x force:          1.42568, y force:        0.0129537
+Writing Tecplot file ./ibpm87412.plt
+
+step 413
+    x force:          1.42565, y force:        0.0155932
+Writing Tecplot file ./ibpm87413.plt
+
+step 414
+    x force:          1.42562, y force:        0.0182281
+Writing Tecplot file ./ibpm87414.plt
+
+step 415
+    x force:           1.4256, y force:        0.0208576
+Writing Tecplot file ./ibpm87415.plt
+
+step 416
+    x force:          1.42557, y force:        0.0234807
+Writing Tecplot file ./ibpm87416.plt
+
+step 417
+    x force:          1.42555, y force:        0.0260968
+Writing Tecplot file ./ibpm87417.plt
+
+step 418
+    x force:          1.42552, y force:        0.0287049
+Writing Tecplot file ./ibpm87418.plt
+
+step 419
+    x force:           1.4255, y force:        0.0313045
+Writing Tecplot file ./ibpm87419.plt
+
+step 420
+    x force:          1.42548, y force:        0.0338945
+Writing Tecplot file ./ibpm87420.plt
+
+step 421
+    x force:          1.42546, y force:        0.0364743
+Writing Tecplot file ./ibpm87421.plt
+
+step 422
+    x force:          1.42544, y force:         0.039043
+Writing Tecplot file ./ibpm87422.plt
+
+step 423
+    x force:          1.42543, y force:        0.0415999
+Writing Tecplot file ./ibpm87423.plt
+
+step 424
+    x force:          1.42541, y force:        0.0441442
+Writing Tecplot file ./ibpm87424.plt
+
+step 425
+    x force:           1.4254, y force:        0.0466751
+Writing Tecplot file ./ibpm87425.plt
+
+step 426
+    x force:          1.42539, y force:        0.0491918
+Writing Tecplot file ./ibpm87426.plt
+
+step 427
+    x force:          1.42538, y force:        0.0516935
+Writing Tecplot file ./ibpm87427.plt
+
+step 428
+    x force:          1.42538, y force:        0.0541796
+Writing Tecplot file ./ibpm87428.plt
+
+step 429
+    x force:          1.42537, y force:        0.0566492
+Writing Tecplot file ./ibpm87429.plt
+
+step 430
+    x force:          1.42537, y force:        0.0591015
+Writing Tecplot file ./ibpm87430.plt
+
+step 431
+    x force:          1.42536, y force:        0.0615359
+Writing Tecplot file ./ibpm87431.plt
+
+step 432
+    x force:          1.42536, y force:        0.0639516
+Writing Tecplot file ./ibpm87432.plt
+
+step 433
+    x force:          1.42536, y force:        0.0663478
+Writing Tecplot file ./ibpm87433.plt
+
+step 434
+    x force:          1.42537, y force:        0.0687237
+Writing Tecplot file ./ibpm87434.plt
+
+step 435
+    x force:          1.42537, y force:        0.0710788
+Writing Tecplot file ./ibpm87435.plt
+
+step 436
+    x force:          1.42538, y force:        0.0734122
+Writing Tecplot file ./ibpm87436.plt
+
+step 437
+    x force:          1.42538, y force:        0.0757233
+Writing Tecplot file ./ibpm87437.plt
+
+step 438
+    x force:          1.42539, y force:        0.0780113
+Writing Tecplot file ./ibpm87438.plt
+
+step 439
+    x force:           1.4254, y force:        0.0802755
+Writing Tecplot file ./ibpm87439.plt
+
+step 440
+    x force:          1.42542, y force:        0.0825152
+Writing Tecplot file ./ibpm87440.plt
+
+step 441
+    x force:          1.42543, y force:        0.0847297
+Writing Tecplot file ./ibpm87441.plt
+
+step 442
+    x force:          1.42545, y force:        0.0869185
+Writing Tecplot file ./ibpm87442.plt
+
+step 443
+    x force:          1.42546, y force:        0.0890807
+Writing Tecplot file ./ibpm87443.plt
+
+step 444
+    x force:          1.42548, y force:        0.0912158
+Writing Tecplot file ./ibpm87444.plt
+
+step 445
+    x force:           1.4255, y force:         0.093323
+Writing Tecplot file ./ibpm87445.plt
+
+step 446
+    x force:          1.42552, y force:        0.0954017
+Writing Tecplot file ./ibpm87446.plt
+
+step 447
+    x force:          1.42555, y force:        0.0974514
+Writing Tecplot file ./ibpm87447.plt
+
+step 448
+    x force:          1.42557, y force:        0.0994712
+Writing Tecplot file ./ibpm87448.plt
+
+step 449
+    x force:           1.4256, y force:         0.101461
+Writing Tecplot file ./ibpm87449.plt
+
+step 450
+    x force:          1.42563, y force:         0.103419
+Writing Tecplot file ./ibpm87450.plt
+
+step 451
+    x force:          1.42566, y force:         0.105346
+Writing Tecplot file ./ibpm87451.plt
+
+step 452
+    x force:          1.42569, y force:         0.107241
+Writing Tecplot file ./ibpm87452.plt
+
+step 453
+    x force:          1.42572, y force:         0.109103
+Writing Tecplot file ./ibpm87453.plt
+
+step 454
+    x force:          1.42575, y force:         0.110932
+Writing Tecplot file ./ibpm87454.plt
+
+step 455
+    x force:          1.42578, y force:         0.112727
+Writing Tecplot file ./ibpm87455.plt
+
+step 456
+    x force:          1.42582, y force:         0.114487
+Writing Tecplot file ./ibpm87456.plt
+
+step 457
+    x force:          1.42586, y force:         0.116213
+Writing Tecplot file ./ibpm87457.plt
+
+step 458
+    x force:          1.42589, y force:         0.117903
+Writing Tecplot file ./ibpm87458.plt
+
+step 459
+    x force:          1.42593, y force:         0.119557
+Writing Tecplot file ./ibpm87459.plt
+
+step 460
+    x force:          1.42597, y force:         0.121174
+Writing Tecplot file ./ibpm87460.plt
+
+step 461
+    x force:          1.42601, y force:         0.122755
+Writing Tecplot file ./ibpm87461.plt
+
+step 462
+    x force:          1.42605, y force:         0.124298
+Writing Tecplot file ./ibpm87462.plt
+
+step 463
+    x force:          1.42609, y force:         0.125803
+Writing Tecplot file ./ibpm87463.plt
+
+step 464
+    x force:          1.42614, y force:         0.127269
+Writing Tecplot file ./ibpm87464.plt
+
+step 465
+    x force:          1.42618, y force:         0.128697
+Writing Tecplot file ./ibpm87465.plt
+
+step 466
+    x force:          1.42622, y force:         0.130085
+Writing Tecplot file ./ibpm87466.plt
+
+step 467
+    x force:          1.42627, y force:         0.131434
+Writing Tecplot file ./ibpm87467.plt
+
+step 468
+    x force:          1.42631, y force:         0.132742
+Writing Tecplot file ./ibpm87468.plt
+
+step 469
+    x force:          1.42636, y force:          0.13401
+Writing Tecplot file ./ibpm87469.plt
+
+step 470
+    x force:          1.42641, y force:         0.135237
+Writing Tecplot file ./ibpm87470.plt
+
+step 471
+    x force:          1.42645, y force:         0.136423
+Writing Tecplot file ./ibpm87471.plt
+
+step 472
+    x force:           1.4265, y force:         0.137567
+Writing Tecplot file ./ibpm87472.plt
+
+step 473
+    x force:          1.42655, y force:         0.138669
+Writing Tecplot file ./ibpm87473.plt
+
+step 474
+    x force:           1.4266, y force:         0.139729
+Writing Tecplot file ./ibpm87474.plt
+
+step 475
+    x force:          1.42664, y force:         0.140745
+Writing Tecplot file ./ibpm87475.plt
+
+step 476
+    x force:          1.42669, y force:         0.141719
+Writing Tecplot file ./ibpm87476.plt
+
+step 477
+    x force:          1.42674, y force:          0.14265
+Writing Tecplot file ./ibpm87477.plt
+
+step 478
+    x force:          1.42679, y force:         0.143537
+Writing Tecplot file ./ibpm87478.plt
+
+step 479
+    x force:          1.42683, y force:          0.14438
+Writing Tecplot file ./ibpm87479.plt
+
+step 480
+    x force:          1.42688, y force:          0.14518
+Writing Tecplot file ./ibpm87480.plt
+
+step 481
+    x force:          1.42693, y force:         0.145935
+Writing Tecplot file ./ibpm87481.plt
+
+step 482
+    x force:          1.42698, y force:         0.146645
+Writing Tecplot file ./ibpm87482.plt
+
+step 483
+    x force:          1.42702, y force:          0.14731
+Writing Tecplot file ./ibpm87483.plt
+
+step 484
+    x force:          1.42707, y force:         0.147931
+Writing Tecplot file ./ibpm87484.plt
+
+step 485
+    x force:          1.42712, y force:         0.148506
+Writing Tecplot file ./ibpm87485.plt
+
+step 486
+    x force:          1.42716, y force:         0.149036
+Writing Tecplot file ./ibpm87486.plt
+
+step 487
+    x force:          1.42721, y force:         0.149521
+Writing Tecplot file ./ibpm87487.plt
+
+step 488
+    x force:          1.42725, y force:          0.14996
+Writing Tecplot file ./ibpm87488.plt
+
+step 489
+    x force:           1.4273, y force:         0.150353
+Writing Tecplot file ./ibpm87489.plt
+
+step 490
+    x force:          1.42734, y force:         0.150701
+Writing Tecplot file ./ibpm87490.plt
+
+step 491
+    x force:          1.42738, y force:         0.151002
+Writing Tecplot file ./ibpm87491.plt
+
+step 492
+    x force:          1.42743, y force:         0.151257
+Writing Tecplot file ./ibpm87492.plt
+
+step 493
+    x force:          1.42747, y force:         0.151466
+Writing Tecplot file ./ibpm87493.plt
+
+step 494
+    x force:          1.42751, y force:         0.151629
+Writing Tecplot file ./ibpm87494.plt
+
+step 495
+    x force:          1.42755, y force:         0.151746
+Writing Tecplot file ./ibpm87495.plt
+
+step 496
+    x force:          1.42758, y force:         0.151816
+Writing Tecplot file ./ibpm87496.plt
+
+step 497
+    x force:          1.42762, y force:          0.15184
+Writing Tecplot file ./ibpm87497.plt
+
+step 498
+    x force:          1.42766, y force:         0.151818
+Writing Tecplot file ./ibpm87498.plt
+
+step 499
+    x force:          1.42769, y force:          0.15175
+Writing Tecplot file ./ibpm87499.plt
+
+step 500
+    x force:          1.42773, y force:         0.151635
+Writing Tecplot file ./ibpm87500.plt
+Writing restart file ./ibpm87500.bin...done

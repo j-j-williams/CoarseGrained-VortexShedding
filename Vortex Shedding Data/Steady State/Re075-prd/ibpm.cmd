@@ -1,0 +1,1 @@
+../../../build/ibpm -tecplot 1 -tecplotallgrids 0 -restart 100 -nx 2700 -ny 800 -ngrid 2 -length 54 -xoffset -2 -yoffset -8 -xshift 0.75 -geom cylinder.geom -ubf 0 -Re 75 -ic ibpm00000.bin -dt 0.02 -nsteps 500
