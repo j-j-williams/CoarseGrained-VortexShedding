@@ -1,0 +1,22 @@
+{
+    
+    "Re":                   50      ,
+    "l_d_flag":             "lift"  ,
+
+    "regime":               "trans",
+
+    "t_trm_1":              25000   ,
+    "t_trm_2":              50000   ,
+    
+    "TDE_or_ddt":           "TDE"   ,
+    "TD_Embed":             3       ,
+
+    "threshold":            0.0       ,
+    "poly_order":           3       ,
+
+    "diff_order":           2       , 
+    "should_normalize":     1       ,
+
+    "iterations":           7      
+
+}

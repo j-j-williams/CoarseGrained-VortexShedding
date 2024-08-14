@@ -1,16 +1,16 @@
+
 import numpy as np
 
 
-def fnc_loadData_lift(Re , t_trm_1 , t_trm_2, regime):
+def fnc_loadData_lift( Re , t_trm_1 , t_trm_2, regime ):
 
     ###  Set loading strings
-    if regime   == "trans":   stem = '../../Vortex Shedding Data/Transient/Coefficients of Lift, Drag/'
-    elif regime == "steady":  stem = '../../Vortex Shedding Data/Steady State/Coefficients of Lift, Drag/'
+    if   regime == "trans":   stem = '../../Vortex Shedding Data/Transient/'
+    elif regime == "steady":  stem = '../../Vortex Shedding Data/Steady State/'
 
     filename = stem + 'Re' + str(Re) + '/ibpm.force'
 
     ###  Load data
-
     full_simulation_data = np.genfromtxt(filename, dtype="f8", delimiter=" ")
     t =   full_simulation_data[t_trm_1 : t_trm_2, 1]
     C_l = full_simulation_data[t_trm_1 : t_trm_2, 3]

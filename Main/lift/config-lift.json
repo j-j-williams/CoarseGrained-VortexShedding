@@ -3,13 +3,13 @@
     "Re":                   50      ,
     "l_d_flag":             "lift"  ,
 
-    "regime":               "trans",
+    "regime":               "trans" ,
 
     "t_trm_1":              25000   ,
-    "t_trm_2":              50000   ,
+    "t_trm_2":              75000   ,
     
     "TDE_or_ddt":           "TDE"   ,
-    "TD_Embed":             3       ,
+    "TD_Embed":             2       ,
 
     "threshold":            0.0       ,
     "poly_order":           3       ,
@@ -17,6 +17,6 @@
     "diff_order":           2       , 
     "should_normalize":     1       ,
 
-    "iterations":           31      
+    "iterations":           11      
 
 }

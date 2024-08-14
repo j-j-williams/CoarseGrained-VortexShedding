@@ -1,0 +1,29 @@
+{
+
+    "Re":                   100       ,
+    "data_choice_string":   "W"      ,
+
+    "regime":               "trans" ,
+
+    "x_trnc_pt_a":          199      ,
+    "x_trnc_pt_b":          2574     ,
+
+    "y_CG_1":               -8       ,
+    "y_CG_2":               8        ,
+
+    "TDE_or_ddt":           "TDE"    ,
+    "TD_Embed":             2.0      ,
+
+    "should_normalize":     1        ,
+
+    "threshold":            0        ,
+    "should_interact":      0        ,
+    "should_uniform":       1        ,
+    "is_periodic":          0        ,
+    "deriv_order":          2        ,
+    "PolyPower":            23       ,
+    "should_bias":          0        ,
+    "train_proportion":     0.6      ,
+    "PF_alpha":             1e-5     ,
+    "PF_max_iter":          200      
+}
