@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 
 ###########################################################################
 # This code is adapted from Sam Rudy's code for loading IBPM  data, 
@@ -13,60 +8,25 @@
 ###########################################################################
 
 
-# In[ ]:
-
-
 ###  Import modules
-
-
 import numpy as np
 import os
 import time
 import matplotlib.pyplot as plt
 
 
-# In[ ]:
-
-
 ###  Set the load file
-
-
-# data_path = '/Volumes/Backup Hard Drive/Holding Folder/Research/IBPM Simulations/Main Simulations/2022_06_21_Re050_Big_Prd/'
-# data_path = '/Volumes/Backup Hard Drive/Holding Folder/Research/IBPM Simulations/Main Simulations/2022_06_21_Re062_Big_Prd/'
-# data_path = '/Volumes/Backup Hard Drive/Holding Folder/Research/IBPM Simulations/Main Simulations/2022_06_21_Re075_Big_Prd/'
-# data_path = '/Volumes/Backup Hard Drive/Holding Folder/Research/IBPM Simulations/Main Simulations/2022_06_21_Re087_Big_Prd/'
-# data_path = '/Volumes/Backup Hard Drive/Holding Folder/Research/IBPM Simulations/Main Simulations/2022_06_21_Re100_Big_Prd/'
-
-
-
-# data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re050-1/'
-# data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re050-2/'
-# data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re100-1/'
-
-# data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re075-1/'
-# data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re050-2/'
-# data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Re062-1/'
-
 data_path = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Production Runs/' + str_runTitle + '/'
-
 
 
 nx = 2700
 ny = 800
 
 
-# In[ ]:
-
-
 ###  Set  loading string
-
-
 save_path = data_path + 'Data/'
 filenames = sorted([os.path.join(data_path,f) for f in os.listdir(data_path) if f[-3:] == 'plt'])
 nt = len(filenames)
-
-
-# In[ ]:
 
 
 ###  Load the .PLT data and save it as .NPY
@@ -108,7 +68,6 @@ for it in range( nt ):
 print('\n\nFinished!!\n\n')
 
 
-# In[ ]:
 
 
 ###  Plot full colormaps of the data
@@ -159,7 +118,6 @@ plt.colorbar()
 plt.show()
 
 
-# In[ ]:
 
 
 

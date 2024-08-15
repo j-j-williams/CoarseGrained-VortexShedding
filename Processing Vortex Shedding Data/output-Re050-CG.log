@@ -1,0 +1,16 @@
+
+show_figs  =  0
+
+
+i  =  0  /  500
+i  =  1  /  500
+Traceback (most recent call last):
+  File "coarseGrain.py", line 135, in <module>
+    main(args)
+  File "coarseGrain.py", line 114, in main
+    U_yPt, V_yPt, W_yPt = process_data(stem+'Data/', args.y_CG_1, args.y_CG_2, nx, nt)
+  File "coarseGrain.py", line 20, in process_data
+    U = np.load(stem + 'U/' + f'U_{it}.npy')
+  File "/Users/josephwilliams/opt/miniconda3/lib/python3.8/site-packages/numpy/lib/npyio.py", line 407, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../Vortex Shedding Data/Steady State/Re50/Data/U/U_1.npy'

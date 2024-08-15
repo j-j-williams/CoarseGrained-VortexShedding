@@ -104,7 +104,7 @@ def plot_full_colormaps(save_dir, show_figs, U_yPt, V_yPt, W_yPt, y, y_CG_1, y_C
 def main(args):
     show_figs = 0
     print('\nshow_figs  =  0\n\n')
-    stem = f'../../ibpm-master/Lab iMac Sims/Production Runs/{args.str_runTitle}/'
+    stem = f'../Vortex Shedding Data/{args.str_regime}/{args.str_runTitle}/'
     
     x, y, t = load_data(stem+'Parameters/')
     nx = len(x) - 1
@@ -113,7 +113,7 @@ def main(args):
 
     U_yPt, V_yPt, W_yPt = process_data(stem+'Data/', args.y_CG_1, args.y_CG_2, nx, nt)
 
-    save_dir = f'../../ibpm-master/Lab iMac Sims/Production Runs/{args.str_runTitle}/CoarseGrained-Data/'
+    save_dir = f'../Vortex Shedding Data/{args.str_regime}/{args.str_runTitle}/CoarseGrained-Data/'
     save_str = f'_y{round(y[args.y_CG_1+1])}_y{round(y[args.y_CG_2+1])}.npy'
     
     print(f'Taking average between y-lines (rounded to O(1e0)):\n')
@@ -127,6 +127,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process and analyze simulation data.")
     parser.add_argument('str_runTitle', type=str, help="Title of the run")
+    parser.add_argument('str_regime'  , type=str, help="'Steady State' or 'Transient'")
     parser.add_argument('y_CG_1', type=int, help="Lower bound y index for averaging")
     parser.add_argument('y_CG_2', type=int, help="Upper bound y index for averaging")
     args = parser.parse_args()
