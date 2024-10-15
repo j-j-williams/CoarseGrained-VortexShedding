@@ -28,11 +28,12 @@ def compute_pod(U_data):
 
 
 def plot_pod_modes(POD_modes, Nx, Ny, mode_idx , stem , results_dir ):
-    mode = POD_modes[:, mode_idx].reshape(Nx, Ny)
-    prm_vminmax = np.max( np.abs( [np.max(mode) , np.min(mode)]  )  )
+
+    plt_fontsize  = 24
+    tick_fontsize = 18
 
     if mode_idx == 0:
-        prm_vminmax = 0.0025    
+        prm_vminmax = 0.0025 
 
     x_L = -2
     y_B = -4
@@ -41,23 +42,40 @@ def plot_pod_modes(POD_modes, Nx, Ny, mode_idx , stem , results_dir ):
     x = np.linspace( x_L ,  x_L + L ,  num=Nx+2 )
     y = np.linspace( y_B ,  y_B + H ,  num=Ny+2 )
 
+
+    mode = POD_modes[:, mode_idx].reshape(Nx, Ny)
+    prm_vminmax = np.max( np.abs( [np.max(mode) , np.min(mode)]  )  )
+
+
     xy_mshgrd , yx_mshgrd = np.meshgrid(x[1:-1],y[1:-1])
     prm_cmap = 'RdBu_r'
 
-    plt.figure(dpi=75)
+
+    plt.figure(dpi=150)
     plt.pcolormesh(xy_mshgrd, yx_mshgrd, mode.T, cmap=prm_cmap , vmin = -prm_vminmax , vmax = prm_vminmax )
-    plt.colorbar()
-    plt.title(f'POD Mode {mode_idx+1}')
-    plt.xlabel('x')
-    plt.ylabel('y')
+    
+
+    # plt.colorbar()
+
+    cbar = plt.colorbar()
+    cbar.ax.tick_params( labelsize = tick_fontsize )  # Adjust tick mark font size
+
+
+    plt.title(f'POD Mode {mode_idx}' , fontsize = plt_fontsize )
+    plt.xlabel('x' , fontsize = plt_fontsize )
+    plt.ylabel('y' , fontsize = plt_fontsize )
+    plt.xticks( fontsize= tick_fontsize)
+    plt.yticks( fontsize= tick_fontsize)
+    plt.tight_layout()
     # plt.show()
-    plt.savefig( stem + results_dir + '2_' + str(mode_idx+1)  + '-POD-Mode-'  + str(mode_idx+1)  + '.png' )
+    plt.savefig( stem + results_dir + '2_' + str(mode_idx)  + '-POD-Mode-'  + str(mode_idx)  + '.png' )
 
 
 
 ###     Parameters
 
-prm_N_modes = 9
+prm_N_modes_save = 3
+prm_N_modes_plot = 9
 
 
 Nx = 2699
@@ -100,10 +118,13 @@ print('\nFinished loading the data!\n')
 
 print('\nComputing POD...')
 POD_modes, POD_eigvals = compute_pod(U_data)
-print('First ' +str(prm_N_modes)+ ' POD eigenvalues are:')
-print(POD_eigvals[:prm_N_modes])
+print(np.shape(POD_modes))
+
+
+print('First ' +str(prm_N_modes_plot)+ ' POD eigenvalues are:')
+print(POD_eigvals[:prm_N_modes_plot])
 ### Saving the entire POD is huge, so save just the first modes
-np.save( stem + results_dir + 'POD_modes_'+str(prm_N_modes)+'.npy'   ,  POD_modes[:,prm_N_modes] )
+np.save( stem + results_dir + 'POD_modes_'+str(prm_N_modes_save)+'.npy'   ,  POD_modes[:,:prm_N_modes_save] )
 np.save( stem + results_dir + 'POD_eigvals.npy' ,  POD_eigvals )
 
 print('\nFinished computing POD!\n')
@@ -113,7 +134,7 @@ print('\nFinished computing POD!\n')
 # Plot the POD modes and eigenvalue spectrum 
 
 print('\nPlotting POD...')
-for i in range(prm_N_modes):
+for i in range(prm_N_modes_plot):
     plot_pod_modes(POD_modes, Nx, Ny, i , stem , results_dir)
 
 plt.figure()
