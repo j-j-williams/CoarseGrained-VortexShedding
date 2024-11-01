@@ -43,7 +43,7 @@ def plot_pod_modes(POD_modes, Nx, Ny, mode_idx  ):
     plt.xticks( [], fontsize= tick_fontsize)
     plt.yticks( [], fontsize= tick_fontsize)
 
-    plt.axis([-2,10,-2,2])
+    plt.axis([-2,15,-2,2])
 
     plt.tight_layout()
     # plt.show()
@@ -65,7 +65,7 @@ Nt = 501
 
 
 # stem = '/Users/josephwilliams/Documents/GitHub/CoarseGrained-VortexShedding/Vortex Shedding Data/Steady State/Re50/POD/'
-stem = '/Users/josephwilliams/Downloads/POD/'
+stem = '/Users/josephwilliams/Downloads/'
 
 
 # stem = '/Users/stevebrunton/Documents/ibpm-master/Lab iMac Sims/Production Runs/Re050-prd/'
