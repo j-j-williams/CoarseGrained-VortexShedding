@@ -21,9 +21,14 @@ def process_data(stem, y_CG_1, y_CG_2, nx, nt):
         V = np.load(stem + 'V/' + f'V_{it}.npy')
         W = np.load(stem + 'W/' + f'W_{it}.npy')
 
-        U_yPt[:, it] = np.mean(U[:, y_CG_1:y_CG_2], axis=1)
-        V_yPt[:, it] = np.mean(V[:, y_CG_1:y_CG_2], axis=1)
-        W_yPt[:, it] = np.mean(W[:, y_CG_1:y_CG_2], axis=1)
+        # U_yPt[:, it] = np.mean(U[:, y_CG_1:y_CG_2], axis=1)
+        # V_yPt[:, it] = np.mean(V[:, y_CG_1:y_CG_2], axis=1)
+        # W_yPt[:, it] = np.mean(W[:, y_CG_1:y_CG_2], axis=1)
+
+        U_yPt[ : , it ] =    np.trapz( U[ : , y_CG_1 : y_CG_2 ] ,  dx = dt ,  axis=1 )
+        V_yPt[ : , it ] =    np.trapz( V[ : , y_CG_1 : y_CG_2 ] ,  dx = dt ,  axis=1 )
+        W_yPt[ : , it ] =    np.trapz( W[ : , y_CG_1 : y_CG_2 ] ,  dx = dt ,  axis=1 )
+
     
     return U_yPt, V_yPt, W_yPt
 
